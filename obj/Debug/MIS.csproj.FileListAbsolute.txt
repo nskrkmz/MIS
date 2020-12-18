@@ -1,0 +1,10 @@
+C:\Users\aensk\OneDrive\Belgeler\GitHub\MIS\bin\Debug\MIS.exe.config
+C:\Users\aensk\OneDrive\Belgeler\GitHub\MIS\bin\Debug\MIS.exe
+C:\Users\aensk\OneDrive\Belgeler\GitHub\MIS\bin\Debug\MIS.pdb
+C:\Users\aensk\OneDrive\Belgeler\GitHub\MIS\obj\Debug\MIS.csprojAssemblyReference.cache
+C:\Users\aensk\OneDrive\Belgeler\GitHub\MIS\obj\Debug\MIS.Form1.resources
+C:\Users\aensk\OneDrive\Belgeler\GitHub\MIS\obj\Debug\MIS.Properties.Resources.resources
+C:\Users\aensk\OneDrive\Belgeler\GitHub\MIS\obj\Debug\MIS.csproj.GenerateResource.cache
+C:\Users\aensk\OneDrive\Belgeler\GitHub\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
+C:\Users\aensk\OneDrive\Belgeler\GitHub\MIS\obj\Debug\MIS.exe
+C:\Users\aensk\OneDrive\Belgeler\GitHub\MIS\obj\Debug\MIS.pdb
