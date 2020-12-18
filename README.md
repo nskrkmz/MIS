@@ -1,2 +1,5 @@
-# MIS
- MIS (Market Information System)
+# MIS (Market Information System)
+
+## Licensing
+
+Code in this repository is licensed under the [MIT License](https://github.com/nskrkmz/MIS/blob/main/LICENSE).
