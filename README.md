@@ -5,10 +5,10 @@
 Code in this repository is licensed under the [MIT License](https://github.com/nskrkmz/MIS/blob/main/LICENSE).
 
 ### Authors
-Abdullah Enes Korkmaz
+[Abdullah Enes Korkmaz](https://github.com/nskrkmz)
 
-Enes Döveç
+[Enes Döveç](https://github.com/frothycoffee)
 
-Buğra Batuhan Tunç
+[Buğra Batuhan Tunç](https://github.com/batuhantuncdev)
 
-Baran Efe
+[Baran Efe](https://github.com/Baranefee)
