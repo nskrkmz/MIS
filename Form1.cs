@@ -60,5 +60,10 @@ namespace MIS
             System.Diagnostics.Process.Start(e.Link.LinkData.ToString());
             
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
