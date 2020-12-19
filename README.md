@@ -6,4 +6,4 @@ Code in this repository is licensed under the [MIT License](https://github.com/n
 
 Enes Döveç
 
-Buğra Batuhan Tunç
+Batuhan Tunç
