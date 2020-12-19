@@ -22,6 +22,37 @@ namespace MIS
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            linkLabel1.Text = "Kaynak kodu görüntüle : GitHub" ;
+
+            linkLabel1.Links.Add(24, 6, "https://github.com/nskrkmz/MIS");
+            
+            //Linkleri mavi göster
+            linkLabel1.LinkColor = Color.Blue;
+            //Gezilmiş linkleri kırmızı göster
+            linkLabel1.VisitedLinkColor = Color.Red;
+            //Aktif linkleri kahverengi göster
+            linkLabel1.ActiveLinkColor = Color.Brown;
+            //Linklerin altını fare üzerine geldiğinde çiz
+            linkLabel1.LinkBehavior = LinkBehavior.HoverUnderline;
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //Tıklanan linki ziyaret edilmiş renkle göster
+            linkLabel1.Links[linkLabel1.Links.IndexOf(e.Link)].Visited = true;
+            //Linki çalıştır
+            System.Diagnostics.Process.Start(e.Link.LinkData.ToString());
 
         }
     }

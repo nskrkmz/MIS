@@ -86,5 +86,29 @@
   <ItemGroup>
     <None Include="Resources\pexels-magda-ehlers-1300972.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgImageLoginFrame.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_iç.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginFrameLogo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
