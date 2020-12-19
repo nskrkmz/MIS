@@ -26,7 +26,7 @@ namespace MIS
            
 
             linkLabel1.Links.Add(24, 6, "https://github.com/nskrkmz/MIS");
-            linkLabel1.ForeColor = System.Drawing.Color.Aqua;
+            linkLabel1.ForeColor = System.Drawing.Color.Red;
 
             //Linkleri mavi göster
             //linkLabel1.LinkColor = Color.DarkBlue;

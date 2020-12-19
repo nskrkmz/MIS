@@ -18,3 +18,13 @@ D:\WorkSpace\MIS\obj\Debug\MIS.csproj.GenerateResource.cache
 D:\WorkSpace\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
 D:\WorkSpace\MIS\obj\Debug\MIS.exe
 D:\WorkSpace\MIS\obj\Debug\MIS.pdb
+C:\MIS\bin\Debug\MIS.exe.config
+C:\MIS\bin\Debug\MIS.exe
+C:\MIS\bin\Debug\MIS.pdb
+C:\MIS\obj\Debug\MIS.csprojAssemblyReference.cache
+C:\MIS\obj\Debug\MIS.Form1.resources
+C:\MIS\obj\Debug\MIS.Properties.Resources.resources
+C:\MIS\obj\Debug\MIS.csproj.GenerateResource.cache
+C:\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
+C:\MIS\obj\Debug\MIS.exe
+C:\MIS\obj\Debug\MIS.pdb
