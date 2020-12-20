@@ -130,14 +130,14 @@
   <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unnamed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="misAmblem" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\misAmblem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="login_logoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login_logoo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="loginImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loginImage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_logooo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login_logooo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logo_iç" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo_iç.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,10 +154,16 @@
   <data name="loginFrameLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loginFrameLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="menuStick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuStick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="misAmblem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\misAmblem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bgImageLoginFrame" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bgImageLoginFrame.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="login_logooo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login_logooo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menuStick2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuStick2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -28,3 +28,7 @@ C:\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
 C:\MIS\obj\Debug\MIS.exe
 C:\MIS\obj\Debug\MIS.pdb
 D:\WorkSpace\MIS\obj\Debug\MIS.FormGirisEkrani.resources
+D:\WorkSpace\MIS\obj\Debug\MIS.FormStokGirisDogrulamaPenceresi.resources
+D:\WorkSpace\MIS\obj\Debug\MIS.FormStokGirisEkrani.resources
+D:\WorkSpace\MIS\obj\Debug\MIS.FormAnaEkran.resources
+D:\WorkSpace\MIS\obj\Debug\MIS.Menu.resources
