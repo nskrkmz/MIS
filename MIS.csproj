@@ -46,16 +46,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnaEkran.Designer.cs">
+      <DependentUpon>FormAnaEkran.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGirisEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormGirisEkrani.Designer.cs">
       <DependentUpon>FormGirisEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormStokGirisDogrulamaPenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStokGirisDogrulamaPenceresi.Designer.cs">
+      <DependentUpon>FormStokGirisDogrulamaPenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStokGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStokGirisEkrani.Designer.cs">
+      <DependentUpon>FormStokGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAnaEkran.resx">
+      <DependentUpon>FormAnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGirisEkrani.resx">
       <DependentUpon>FormGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStokGirisDogrulamaPenceresi.resx">
+      <DependentUpon>FormStokGirisDogrulamaPenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStokGirisEkrani.resx">
+      <DependentUpon>FormStokGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,6 +157,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login_logooo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuStick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuStick2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

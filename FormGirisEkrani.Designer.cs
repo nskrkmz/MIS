@@ -186,6 +186,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.LinkLabel linkGithub;
+        
     }
 }
 

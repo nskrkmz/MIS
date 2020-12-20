@@ -16,7 +16,15 @@ namespace MIS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormGirisEkrani());
+            //düzenlenecek!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            //Application.Run(new FormGirisEkrani());
+            Application.Run(new FormAnaEkran());
+            Application.Run(new Menu());
+
+
+
+
+
         }
     }
 }
