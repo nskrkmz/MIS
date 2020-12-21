@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace MIS
 {
+    
     public partial class FormAnaEkran : Form
     {
+        
         public FormAnaEkran()
         {
             InitializeComponent();
@@ -23,12 +25,27 @@ namespace MIS
 
         }
 
+        //28-45.satırlar arasında menü açılışı düzenlenecek
+        //şuan hatalı calisiyor
+        bool acikMenu = false;
         private void button1_Click(object sender, EventArgs e)
         {
             Menu frmMenu = new Menu();//açılacak form
             frmMenu.MdiParent = this;//bu formu parent olarak veriyoruz
-            frmMenu.Show();
             
+            if (acikMenu == true )
+            {
+                frmMenu.Close();
+                acikMenu = false;
+
+            }
+            else
+            {
+                frmMenu.Show();
+                acikMenu = true;
+            }
+
+
         }
 
     }
