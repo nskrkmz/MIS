@@ -25,24 +25,31 @@ namespace MIS
 
         }
 
-        //28-45.satırlar arasında menü açılışı düzenlenecek
+        //28-53.satırlar arasında menü açılışı düzenlenecek
         //şuan hatalı calisiyor
-        bool acikMenu = false;
+        
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             Menu frmMenu = new Menu();//açılacak form
             frmMenu.MdiParent = this;//bu formu parent olarak veriyoruz
-            
-            if (acikMenu == true )
+
+
+            if (frmMenu.Visible)
             {
-                frmMenu.Close();
-                acikMenu = false;
+                
+                frmMenu.Hide();
+                
+
 
             }
             else
             {
+                
                 frmMenu.Show();
-                acikMenu = true;
+                
+                
             }
 
 
