@@ -21,7 +21,6 @@ C:\MIS\bin\Debug\MIS.exe.config
 C:\MIS\bin\Debug\MIS.exe
 C:\MIS\bin\Debug\MIS.pdb
 C:\MIS\obj\Debug\MIS.csprojAssemblyReference.cache
-C:\MIS\obj\Debug\MIS.Form1.resources
 C:\MIS\obj\Debug\MIS.Properties.Resources.resources
 C:\MIS\obj\Debug\MIS.csproj.GenerateResource.cache
 C:\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
@@ -33,3 +32,9 @@ D:\WorkSpace\MIS\obj\Debug\MIS.FormStokGirisEkrani.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.FormAnaEkran.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.Menu.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.FormSatisEkrani.resources
+C:\MIS\obj\Debug\MIS.FormAnaEkran.resources
+C:\MIS\obj\Debug\MIS.FormGirisEkrani.resources
+C:\MIS\obj\Debug\MIS.FormSatisEkrani.resources
+C:\MIS\obj\Debug\MIS.FormStokGirisDogrulamaPenceresi.resources
+C:\MIS\obj\Debug\MIS.FormStokGirisEkrani.resources
+C:\MIS\obj\Debug\MIS.Menu.resources

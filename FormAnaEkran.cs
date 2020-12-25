@@ -22,38 +22,19 @@ namespace MIS
 
         private void FormAnaEkran_Load(object sender, EventArgs e)
         {
-
+            Menu frmMenu = new Menu();
+            frmMenu.MdiParent = this;
+            frmMenu.Show();
         }
 
         //28-53.satırlar arasında menü açılışı düzenlenecek
         //şuan hatalı calisiyor
+    
+
+     
+
+
         
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Menu frmMenu = new Menu();//açılacak form
-            frmMenu.MdiParent = this;//bu formu parent olarak veriyoruz
-
-
-            if (frmMenu.Visible)
-            {
-                
-                frmMenu.Hide();
-                
-
-
-            }
-            else
-            {
-                
-                frmMenu.Show();
-                
-                
-            }
-
-
-        }
 
     }
 }

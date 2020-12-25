@@ -45,9 +45,10 @@
             this.brnSatis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.brnSatis.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.brnSatis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(81)))), ((int)(((byte)(0)))));
-            this.brnSatis.Location = new System.Drawing.Point(0, 104);
+            this.brnSatis.Location = new System.Drawing.Point(0, 84);
+            this.brnSatis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.brnSatis.Name = "brnSatis";
-            this.brnSatis.Size = new System.Drawing.Size(328, 64);
+            this.brnSatis.Size = new System.Drawing.Size(246, 52);
             this.brnSatis.TabIndex = 2;
             this.brnSatis.Text = "Satış";
             this.brnSatis.UseVisualStyleBackColor = false;
@@ -62,9 +63,10 @@
             this.btnBorcOdeme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorcOdeme.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBorcOdeme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(81)))), ((int)(((byte)(0)))));
-            this.btnBorcOdeme.Location = new System.Drawing.Point(0, 174);
+            this.btnBorcOdeme.Location = new System.Drawing.Point(0, 141);
+            this.btnBorcOdeme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBorcOdeme.Name = "btnBorcOdeme";
-            this.btnBorcOdeme.Size = new System.Drawing.Size(328, 64);
+            this.btnBorcOdeme.Size = new System.Drawing.Size(246, 52);
             this.btnBorcOdeme.TabIndex = 3;
             this.btnBorcOdeme.Text = "Borç Ödeme";
             this.btnBorcOdeme.UseVisualStyleBackColor = false;
@@ -79,9 +81,10 @@
             this.btnStokGiris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStokGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnStokGiris.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(81)))), ((int)(((byte)(0)))));
-            this.btnStokGiris.Location = new System.Drawing.Point(0, 244);
+            this.btnStokGiris.Location = new System.Drawing.Point(0, 198);
+            this.btnStokGiris.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnStokGiris.Name = "btnStokGiris";
-            this.btnStokGiris.Size = new System.Drawing.Size(328, 64);
+            this.btnStokGiris.Size = new System.Drawing.Size(246, 52);
             this.btnStokGiris.TabIndex = 4;
             this.btnStokGiris.Text = "Stok Giriş";
             this.btnStokGiris.UseVisualStyleBackColor = false;
@@ -96,9 +99,10 @@
             this.btnRaporlama.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRaporlama.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnRaporlama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(81)))), ((int)(((byte)(0)))));
-            this.btnRaporlama.Location = new System.Drawing.Point(0, 314);
+            this.btnRaporlama.Location = new System.Drawing.Point(0, 255);
+            this.btnRaporlama.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRaporlama.Name = "btnRaporlama";
-            this.btnRaporlama.Size = new System.Drawing.Size(328, 64);
+            this.btnRaporlama.Size = new System.Drawing.Size(246, 52);
             this.btnRaporlama.TabIndex = 5;
             this.btnRaporlama.Text = "Raporlama";
             this.btnRaporlama.UseVisualStyleBackColor = false;
@@ -113,9 +117,10 @@
             this.btnPersonelKayit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPersonelKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnPersonelKayit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(81)))), ((int)(((byte)(0)))));
-            this.btnPersonelKayit.Location = new System.Drawing.Point(0, 384);
+            this.btnPersonelKayit.Location = new System.Drawing.Point(0, 312);
+            this.btnPersonelKayit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPersonelKayit.Name = "btnPersonelKayit";
-            this.btnPersonelKayit.Size = new System.Drawing.Size(328, 64);
+            this.btnPersonelKayit.Size = new System.Drawing.Size(246, 52);
             this.btnPersonelKayit.TabIndex = 6;
             this.btnPersonelKayit.Text = "Personel Kayıt";
             this.btnPersonelKayit.UseVisualStyleBackColor = false;
@@ -123,10 +128,10 @@
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(27)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(327, 888);
+            this.ClientSize = new System.Drawing.Size(245, 729);
             this.Controls.Add(this.btnPersonelKayit);
             this.Controls.Add(this.btnRaporlama);
             this.Controls.Add(this.btnStokGiris);
@@ -134,8 +139,9 @@
             this.Controls.Add(this.brnSatis);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(327, 888);
-            this.MinimumSize = new System.Drawing.Size(327, 888);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(245, 729);
+            this.MinimumSize = new System.Drawing.Size(245, 729);
             this.Name = "Menu";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
