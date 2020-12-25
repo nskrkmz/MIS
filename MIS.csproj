@@ -52,11 +52,35 @@
     <Compile Include="FormAnaEkran.Designer.cs">
       <DependentUpon>FormAnaEkran.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBorcOdemeEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBorcOdemeEkrani.Designer.cs">
+      <DependentUpon>FormBorcOdemeEkrani.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGirisEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormGirisEkrani.Designer.cs">
       <DependentUpon>FormGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonelKayitEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonelKayitEkrani.Designer.cs">
+      <DependentUpon>FormPersonelKayitEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRaporlamaEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRaporlamaEkranı.Designer.cs">
+      <DependentUpon>FormRaporlamaEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSatisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSatisEkrani.Designer.cs">
+      <DependentUpon>FormSatisEkrani.cs</DependentUpon>
     </Compile>
     <Compile Include="FormStokGirisDogrulamaPenceresi.cs">
       <SubType>Form</SubType>
@@ -83,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGirisEkrani.resx">
       <DependentUpon>FormGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSatisEkrani.resx">
+      <DependentUpon>FormSatisEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStokGirisDogrulamaPenceresi.resx">
       <DependentUpon>FormStokGirisDogrulamaPenceresi.cs</DependentUpon>
