@@ -32,3 +32,4 @@ D:\WorkSpace\MIS\obj\Debug\MIS.FormStokGirisDogrulamaPenceresi.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.FormStokGirisEkrani.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.FormAnaEkran.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.Menu.resources
+D:\WorkSpace\MIS\obj\Debug\MIS.FormSatisEkrani.resources
