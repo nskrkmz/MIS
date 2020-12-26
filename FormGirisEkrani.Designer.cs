@@ -47,12 +47,12 @@
             this.pictureBoxKucukResim1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxKucukResim1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxKucukResim1.Image = global::MIS.Properties.Resources.users;
-            this.pictureBoxKucukResim1.Location = new System.Drawing.Point(101, 250);
-            this.pictureBoxKucukResim1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxKucukResim1.MaximumSize = new System.Drawing.Size(37, 37);
-            this.pictureBoxKucukResim1.MinimumSize = new System.Drawing.Size(37, 37);
+            this.pictureBoxKucukResim1.Location = new System.Drawing.Point(76, 203);
+            this.pictureBoxKucukResim1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxKucukResim1.MaximumSize = new System.Drawing.Size(28, 30);
+            this.pictureBoxKucukResim1.MinimumSize = new System.Drawing.Size(28, 30);
             this.pictureBoxKucukResim1.Name = "pictureBoxKucukResim1";
-            this.pictureBoxKucukResim1.Size = new System.Drawing.Size(37, 37);
+            this.pictureBoxKucukResim1.Size = new System.Drawing.Size(28, 30);
             this.pictureBoxKucukResim1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxKucukResim1.TabIndex = 0;
             this.pictureBoxKucukResim1.TabStop = false;
@@ -61,12 +61,12 @@
             // 
             this.pictureBoxKucukResim2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxKucukResim2.Image = global::MIS.Properties.Resources.password_Image;
-            this.pictureBoxKucukResim2.Location = new System.Drawing.Point(101, 306);
-            this.pictureBoxKucukResim2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxKucukResim2.MaximumSize = new System.Drawing.Size(37, 37);
-            this.pictureBoxKucukResim2.MinimumSize = new System.Drawing.Size(37, 37);
+            this.pictureBoxKucukResim2.Location = new System.Drawing.Point(76, 249);
+            this.pictureBoxKucukResim2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxKucukResim2.MaximumSize = new System.Drawing.Size(28, 30);
+            this.pictureBoxKucukResim2.MinimumSize = new System.Drawing.Size(28, 30);
             this.pictureBoxKucukResim2.Name = "pictureBoxKucukResim2";
-            this.pictureBoxKucukResim2.Size = new System.Drawing.Size(37, 37);
+            this.pictureBoxKucukResim2.Size = new System.Drawing.Size(28, 30);
             this.pictureBoxKucukResim2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxKucukResim2.TabIndex = 1;
             this.pictureBoxKucukResim2.TabStop = false;
@@ -75,10 +75,10 @@
             // 
             this.pictureBoxMISLogo.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxMISLogo.Image = global::MIS.Properties.Resources.login_logooo;
-            this.pictureBoxMISLogo.Location = new System.Drawing.Point(101, 81);
-            this.pictureBoxMISLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxMISLogo.Location = new System.Drawing.Point(76, 66);
+            this.pictureBoxMISLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxMISLogo.Name = "pictureBoxMISLogo";
-            this.pictureBoxMISLogo.Size = new System.Drawing.Size(272, 137);
+            this.pictureBoxMISLogo.Size = new System.Drawing.Size(204, 111);
             this.pictureBoxMISLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxMISLogo.TabIndex = 2;
             this.pictureBoxMISLogo.TabStop = false;
@@ -87,30 +87,31 @@
             // KullaniciNoGiris
             // 
             this.KullaniciNoGiris.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.KullaniciNoGiris.Location = new System.Drawing.Point(144, 256);
-            this.KullaniciNoGiris.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.KullaniciNoGiris.Location = new System.Drawing.Point(108, 208);
+            this.KullaniciNoGiris.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.KullaniciNoGiris.Name = "KullaniciNoGiris";
-            this.KullaniciNoGiris.Size = new System.Drawing.Size(209, 25);
+            this.KullaniciNoGiris.Size = new System.Drawing.Size(158, 23);
             this.KullaniciNoGiris.TabIndex = 3;
             this.KullaniciNoGiris.Text = "Kullanıcı No";
+            this.KullaniciNoGiris.TextChanged += new System.EventHandler(this.KullaniciNoGiris_TextChanged);
             // 
             // SifreGiris
             // 
             this.SifreGiris.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.SifreGiris.Location = new System.Drawing.Point(144, 313);
-            this.SifreGiris.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SifreGiris.Location = new System.Drawing.Point(108, 254);
+            this.SifreGiris.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SifreGiris.Name = "SifreGiris";
-            this.SifreGiris.Size = new System.Drawing.Size(209, 25);
+            this.SifreGiris.Size = new System.Drawing.Size(158, 23);
             this.SifreGiris.TabIndex = 4;
             this.SifreGiris.Text = "Şifre";
             this.SifreGiris.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(92, 350);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(69, 284);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(296, 2);
+            this.panel1.Size = new System.Drawing.Size(222, 2);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -120,10 +121,10 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial Black", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(176, 356);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(132, 289);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 33);
+            this.button1.Size = new System.Drawing.Size(87, 27);
             this.button1.TabIndex = 6;
             this.button1.Text = "Giriş";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -136,9 +137,10 @@
             this.linkGithub.AutoSize = true;
             this.linkGithub.BackColor = System.Drawing.Color.Transparent;
             this.linkGithub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.linkGithub.Location = new System.Drawing.Point(97, 407);
+            this.linkGithub.Location = new System.Drawing.Point(73, 331);
+            this.linkGithub.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkGithub.Name = "linkGithub";
-            this.linkGithub.Size = new System.Drawing.Size(184, 20);
+            this.linkGithub.Size = new System.Drawing.Size(177, 20);
             this.linkGithub.TabIndex = 7;
             this.linkGithub.TabStop = true;
             this.linkGithub.Text = "Kaynak Kodu Görüntüle";
@@ -146,12 +148,12 @@
             // 
             // FormGirisEkrani
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImage = global::MIS.Properties.Resources.loginImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(481, 618);
+            this.ClientSize = new System.Drawing.Size(362, 507);
             this.Controls.Add(this.linkGithub);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
@@ -161,9 +163,9 @@
             this.Controls.Add(this.pictureBoxKucukResim2);
             this.Controls.Add(this.pictureBoxKucukResim1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(499, 665);
-            this.MinimumSize = new System.Drawing.Size(499, 665);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(378, 548);
+            this.MinimumSize = new System.Drawing.Size(378, 548);
             this.Name = "FormGirisEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş Yap!";

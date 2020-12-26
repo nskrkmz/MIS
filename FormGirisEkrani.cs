@@ -70,5 +70,10 @@ namespace MIS
         {
 
         }
+
+        private void KullaniciNoGiris_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
