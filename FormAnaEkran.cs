@@ -22,7 +22,7 @@ namespace MIS
 
         private void FormAnaEkran_Load(object sender, EventArgs e)
         {
-            Menu frmMenu = new Menu();
+            FormMenu frmMenu = new FormMenu();
             frmMenu.MdiParent = this;
             frmMenu.Show();
         }

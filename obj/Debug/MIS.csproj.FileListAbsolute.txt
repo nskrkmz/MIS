@@ -30,7 +30,6 @@ D:\WorkSpace\MIS\obj\Debug\MIS.FormGirisEkrani.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.FormStokGirisDogrulamaPenceresi.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.FormStokGirisEkrani.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.FormAnaEkran.resources
-D:\WorkSpace\MIS\obj\Debug\MIS.Menu.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.FormSatisEkrani.resources
 C:\MIS\obj\Debug\MIS.FormAnaEkran.resources
 C:\MIS\obj\Debug\MIS.FormGirisEkrani.resources
@@ -38,3 +37,4 @@ C:\MIS\obj\Debug\MIS.FormSatisEkrani.resources
 C:\MIS\obj\Debug\MIS.FormStokGirisDogrulamaPenceresi.resources
 C:\MIS\obj\Debug\MIS.FormStokGirisEkrani.resources
 C:\MIS\obj\Debug\MIS.Menu.resources
+D:\WorkSpace\MIS\obj\Debug\MIS.FormMenu.resources
