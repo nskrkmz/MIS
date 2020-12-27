@@ -114,6 +114,9 @@
     <EmbeddedResource Include="FormGirisEkrani.resx">
       <DependentUpon>FormGirisEkrani.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonelKayitEkrani.resx">
+      <DependentUpon>FormPersonelKayitEkrani.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSatisEkrani.resx">
       <DependentUpon>FormSatisEkrani.cs</DependentUpon>
     </EmbeddedResource>
