@@ -38,6 +38,7 @@ C:\MIS\obj\Debug\MIS.FormSatisEkrani.resources
 C:\MIS\obj\Debug\MIS.FormStokGirisDogrulamaPenceresi.resources
 C:\MIS\obj\Debug\MIS.FormStokGirisEkrani.resources
 C:\MIS\obj\Debug\MIS.Menu.resources
+<<<<<<< HEAD
 B:\MIS\bin\Debug\MIS.exe.config
 B:\MIS\bin\Debug\MIS.exe
 B:\MIS\bin\Debug\MIS.pdb
@@ -54,3 +55,6 @@ B:\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
 B:\MIS\obj\Debug\MIS.exe
 B:\MIS\obj\Debug\MIS.pdb
 B:\MIS\obj\Debug\MIS.FormPersonelKayitEkrani.resources
+=======
+C:\MIS\obj\Debug\MIS.FormSatisEkraniDogrulamaPenceresi.resources
+>>>>>>> main

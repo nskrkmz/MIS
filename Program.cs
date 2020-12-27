@@ -18,7 +18,8 @@ namespace MIS
             Application.SetCompatibleTextRenderingDefault(false);
             //düzenlenecek!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             //Application.Run(new FormGirisEkrani());
-            Application.Run(new FormAnaEkran());
+            //Application.Run(new FormAnaEkran());
+            Application.Run(new FormSatisEkraniDogrulamaPenceresi());
             //Menu formu Anaekrana parent olarak eklendiği için kaldırıldı
             //Application.Run(new Menu());
 
