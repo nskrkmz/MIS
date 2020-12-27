@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89C53ED9-7080-41FD-9C18-9611D6762D5E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MIS</RootNamespace>
+    <AssemblyName>MIS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnaEkran.Designer.cs">
+      <DependentUpon>FormAnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBorcOdemeEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBorcOdemeEkrani.Designer.cs">
+      <DependentUpon>FormBorcOdemeEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGirisEkrani.Designer.cs">
+      <DependentUpon>FormGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonelKayitEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonelKayitEkrani.Designer.cs">
+      <DependentUpon>FormPersonelKayitEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRaporlamaEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRaporlamaEkranı.Designer.cs">
+      <DependentUpon>FormRaporlamaEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSatisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSatisEkrani.Designer.cs">
+      <DependentUpon>FormSatisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStokGirisDogrulamaPenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStokGirisDogrulamaPenceresi.Designer.cs">
+      <DependentUpon>FormStokGirisDogrulamaPenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStokGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStokGirisEkrani.Designer.cs">
+      <DependentUpon>FormStokGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAnaEkran.resx">
+      <DependentUpon>FormAnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGirisEkrani.resx">
+      <DependentUpon>FormGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSatisEkrani.resx">
+      <DependentUpon>FormSatisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStokGirisDogrulamaPenceresi.resx">
+      <DependentUpon>FormStokGirisDogrulamaPenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStokGirisEkrani.resx">
+      <DependentUpon>FormStokGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-magda-ehlers-1300972.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgImageLoginFrame.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_iç.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginFrameLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\misAmblem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_logoo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_logooo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuStick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuStick2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
