@@ -36,7 +36,6 @@ C:\MIS\obj\Debug\MIS.FormGirisEkrani.resources
 C:\MIS\obj\Debug\MIS.FormSatisEkrani.resources
 C:\MIS\obj\Debug\MIS.FormStokGirisDogrulamaPenceresi.resources
 C:\MIS\obj\Debug\MIS.FormStokGirisEkrani.resources
-C:\MIS\obj\Debug\MIS.Menu.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.FormMenu.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.FormRaporlamaEkranı.resources
 D:\WorkSpace\MIS\bin\Debug\EntityFramework.dll
@@ -44,3 +43,10 @@ D:\WorkSpace\MIS\bin\Debug\EntityFramework.SqlServer.dll
 D:\WorkSpace\MIS\bin\Debug\EntityFramework.xml
 D:\WorkSpace\MIS\bin\Debug\EntityFramework.SqlServer.xml
 D:\WorkSpace\MIS\obj\Debug\MIS.csproj.CopyComplete
+C:\MIS\bin\Debug\EntityFramework.dll
+C:\MIS\bin\Debug\EntityFramework.SqlServer.dll
+C:\MIS\bin\Debug\EntityFramework.xml
+C:\MIS\bin\Debug\EntityFramework.SqlServer.xml
+C:\MIS\obj\Debug\MIS.FormRaporlamaEkranı.resources
+C:\MIS\obj\Debug\MIS.FormMenu.resources
+C:\MIS\obj\Debug\MIS.csproj.CopyComplete
