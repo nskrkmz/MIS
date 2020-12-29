@@ -56,6 +56,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\Context.cs" />
+    <Compile Include="Entity\Urun.cs" />
     <Compile Include="FormAnaEkran.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,9 +207,7 @@
   <ItemGroup>
     <None Include="Resources\menuStick2.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entity\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

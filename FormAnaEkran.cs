@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MIS.Entity;
 
 namespace MIS
 {
@@ -22,6 +23,9 @@ namespace MIS
 
         private void FormAnaEkran_Load(object sender, EventArgs e)
         {
+            Context cntxt =new Context();//Context sınıfından nesne yaratıldı
+            cntxt.Database.Create();//Veritabanı oluşturuldu
+
             FormMenu frmMenu = new FormMenu();
             frmMenu.MdiParent = this;
             frmMenu.Show();
