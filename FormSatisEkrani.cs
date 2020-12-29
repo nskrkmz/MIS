@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace MIS
 {
+    //merhabalar!
     public partial class FormSatisEkrani : Form
     {
         public FormSatisEkrani()
