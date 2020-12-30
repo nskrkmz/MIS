@@ -50,3 +50,4 @@ C:\MIS\bin\Debug\EntityFramework.SqlServer.xml
 C:\MIS\obj\Debug\MIS.FormRaporlamaEkranı.resources
 C:\MIS\obj\Debug\MIS.FormMenu.resources
 C:\MIS\obj\Debug\MIS.csproj.CopyComplete
+D:\WorkSpace\MIS\obj\Debug\MIS.Migrations.InitialCreate.resources
