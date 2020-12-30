@@ -31,8 +31,7 @@ namespace MIS
             frmMenu.Show();
         }
 
-        //28-53.satırlar arasında menü açılışı düzenlenecek
-        //şuan hatalı calisiyor
+        
     
 
      
