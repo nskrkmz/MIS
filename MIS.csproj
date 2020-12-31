@@ -45,6 +45,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -104,6 +105,12 @@
     <Compile Include="FormSatisEkrani.Designer.cs">
       <DependentUpon>FormSatisEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSatisEkraniDogrulamaPenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSatisEkraniDogrulamaPenceresi.Designer.cs">
+      <DependentUpon>FormSatisEkraniDogrulamaPenceresi.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormStokGirisDogrulamaPenceresi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +128,12 @@
     </Compile>
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVeresiyeMüşteriSistemi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVeresiyeMüşteriSistemi.Designer.cs">
+      <DependentUpon>FormVeresiyeMüşteriSistemi.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202012291558111_InitialCreate.cs" />
     <Compile Include="Migrations\202012291558111_InitialCreate.designer.cs">
@@ -141,6 +154,9 @@
     <EmbeddedResource Include="FormSatisEkrani.resx">
       <DependentUpon>FormSatisEkrani.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSatisEkraniDogrulamaPenceresi.resx">
+      <DependentUpon>FormSatisEkraniDogrulamaPenceresi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormStokGirisDogrulamaPenceresi.resx">
       <DependentUpon>FormStokGirisDogrulamaPenceresi.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVeresiyeMüşteriSistemi.resx">
+      <DependentUpon>FormVeresiyeMüşteriSistemi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012291558111_InitialCreate.resx">
       <DependentUpon>202012291558111_InitialCreate.cs</DependentUpon>
