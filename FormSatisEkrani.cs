@@ -20,7 +20,42 @@ namespace MIS
 
         private void FormSatisEkrani_Load(object sender, EventArgs e)
         {
+            // Ödeme yöntemi checkbox aracıyla seçiliyor
+            // Kod ile ekleme yapılmasının sebebi daha sonra veri tabanında daha rahat kullanılmasını sağlamak için yoksa normal ekleme de yapılabilir.
+            string[] odemeYontemi = { "NAKİT", "KART" };
+            comboBox1.Items.AddRange(odemeYontemi);
+        }
 
+        private void VeresiyeÖdemeButonu_Click(object sender, EventArgs e)
+        {
+            //if eklenecek eğer kayıt yoksa burası açılacak kayıt varsa sadece veresiye seçtiği kaydedilecek!!
+            FormVeresiyeMüşteriSistemi fvms = new FormVeresiyeMüşteriSistemi();
+            fvms.Show();
+        }
+
+        private void NakitÖdemeYöntemiBut_Click(object sender, EventArgs e)
+        {
+            //Ödeme yöntemi gerçekleşince satış sisteme işlenecek.
+        }
+
+        private void KartÖdemeYöntemiBut_Click(object sender, EventArgs e)
+        {
+            //Ödeme yöntemi gerçekleşince satış sisteme işlenecek.
+        }
+
+        private void richTextBox3_TextChanged(object sender, EventArgs e)
+        {
+            //barkodu okutulan ürün bu listeye eklenilecek
+        }
+
+        private void richTextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
