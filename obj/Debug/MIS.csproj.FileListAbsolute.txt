@@ -54,3 +54,6 @@ D:\WorkSpace\MIS\obj\Debug\MIS.Migrations.InitialCreate.resources
 C:\MIS\obj\Debug\MIS.FormSatisEkraniDogrulamaPenceresi.resources
 C:\MIS\obj\Debug\MIS.Migrations.InitialCreate.resources
 C:\MIS\obj\Debug\MIS.FormVeresiyeMüşteriSistemi.resources
+D:\WorkSpace\MIS\obj\Debug\MIS.FormSatisEkraniDogrulamaPenceresi.resources
+D:\WorkSpace\MIS\obj\Debug\MIS.FormVeresiyeMüşteriSistemi.resources
+D:\WorkSpace\MIS\obj\Debug\MIS.Migrations.enes.resources
