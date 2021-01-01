@@ -28,9 +28,11 @@ namespace MIS
 
         private void VeresiyeÖdemeButonu_Click(object sender, EventArgs e)
         {
-            //if eklenecek eğer kayıt yoksa burası açılacak kayıt varsa sadece veresiye seçtiği kaydedilecek!!
-            FormVeresiyeMüşteriSistemi fvms = new FormVeresiyeMüşteriSistemi();
-            fvms.Show();
+                FormVeresiyeMusteriSistemi vm= new FormVeresiyeMusteriSistemi();
+                vm.StartPosition = FormStartPosition.Manual;
+                vm.Left = 1150;
+                vm.Top = 345;
+                vm.Show();  
         }
 
         private void NakitÖdemeYöntemiBut_Click(object sender, EventArgs e)
