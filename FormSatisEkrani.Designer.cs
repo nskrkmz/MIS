@@ -121,7 +121,7 @@
             this.Controls.Add(this.PeşinÖdemeButonu);
             this.Controls.Add(this.VeresiyeÖdemeButonu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormSatisEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSatisEkrani";

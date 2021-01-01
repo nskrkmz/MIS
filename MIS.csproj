@@ -129,11 +129,17 @@
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormVeresiyeMüşteriSistemi.cs">
+    <Compile Include="FormVeresiyeMusteriSistemi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormVeresiyeMüşteriSistemi.Designer.cs">
-      <DependentUpon>FormVeresiyeMüşteriSistemi.cs</DependentUpon>
+    <Compile Include="FormVeresiyeMusteriSistemi.Designer.cs">
+      <DependentUpon>FormVeresiyeMusteriSistemi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVeresiyeMüşteriKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVeresiyeMüşteriKayit.Designer.cs">
+      <DependentUpon>FormVeresiyeMüşteriKayit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202012291558111_InitialCreate.cs" />
     <Compile Include="Migrations\202012291558111_InitialCreate.designer.cs">
@@ -170,8 +176,11 @@
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormVeresiyeMüşteriSistemi.resx">
-      <DependentUpon>FormVeresiyeMüşteriSistemi.cs</DependentUpon>
+    <EmbeddedResource Include="FormVeresiyeMusteriSistemi.resx">
+      <DependentUpon>FormVeresiyeMusteriSistemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVeresiyeMüşteriKayit.resx">
+      <DependentUpon>FormVeresiyeMüşteriKayit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012291558111_InitialCreate.resx">
       <DependentUpon>202012291558111_InitialCreate.cs</DependentUpon>
