@@ -21,8 +21,8 @@ namespace MIS
             //Application.Run(new FormAnaEkran());
             //Menu formu Anaekrana parent olarak eklendiği için kaldırıldı
             //Application.Run(new Menu());
-            Application.Run(new FormSatisEkraniDogrulamaPenceresi());
-
+            //Application.Run(new FormSatisEkraniDogrulamaPenceresi());
+            Application.Run(new FormPersonelKayitEkrani());
 
 
 
