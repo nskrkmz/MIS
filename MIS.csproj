@@ -75,12 +75,6 @@
     <Compile Include="FormAnaEkran.Designer.cs">
       <DependentUpon>FormAnaEkran.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormBorcOdemeEkrani.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBorcOdemeEkrani.Designer.cs">
-      <DependentUpon>FormBorcOdemeEkrani.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormBorcOdemeEkranı.cs">
       <SubType>Form</SubType>
     </Compile>

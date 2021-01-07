@@ -89,3 +89,5 @@ B:\MIS\obj\Debug\MIS.FormPersonelKayitEkrani.resources
 C:\MIS\obj\Debug\MIS.FormPersonelKayitEkrani.resources
 C:\MIS\obj\Debug\MIS.FormSilDogrulama.resources
 C:\MIS\obj\Debug\MIS.FormBorcOdemeEkranı.resources
+B:\MIS\obj\Debug\MIS.FormBorcOdemeEkranı.resources
+B:\MIS\obj\Debug\MIS.FormSilDogrulama.resources

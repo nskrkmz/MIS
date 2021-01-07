@@ -23,8 +23,8 @@ namespace MIS
             //Application.Run(new Menu());
             //Application.Run(new FormSatisEkraniDogrulamaPenceresi());
             //Application.Run(new FormPersonelKayitEkrani());
-            Application.Run(new FormBorcOdemeEkranı());
-
+            //Application.Run(new FormBorcOdemeEkranı());
+            Application.Run(new FormStokGirisEkrani());
 
         }
     }
