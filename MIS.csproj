@@ -81,6 +81,12 @@
     <Compile Include="FormBorcOdemeEkrani.Designer.cs">
       <DependentUpon>FormBorcOdemeEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBorcOdemeEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBorcOdemeEkranı.Designer.cs">
+      <DependentUpon>FormBorcOdemeEkranı.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGirisEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,12 @@
     </Compile>
     <Compile Include="FormSatisEkraniDogrulamaPenceresi.Designer.cs">
       <DependentUpon>FormSatisEkraniDogrulamaPenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSilDogrulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSilDogrulama.Designer.cs">
+      <DependentUpon>FormSilDogrulama.cs</DependentUpon>
     </Compile>
     <Compile Include="FormStokGirisDogrulamaPenceresi.cs">
       <SubType>Form</SubType>
@@ -155,6 +167,9 @@
     <EmbeddedResource Include="FormAnaEkran.resx">
       <DependentUpon>FormAnaEkran.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormBorcOdemeEkranı.resx">
+      <DependentUpon>FormBorcOdemeEkranı.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGirisEkrani.resx">
       <DependentUpon>FormGirisEkrani.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSatisEkraniDogrulamaPenceresi.resx">
       <DependentUpon>FormSatisEkraniDogrulamaPenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSilDogrulama.resx">
+      <DependentUpon>FormSilDogrulama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStokGirisDogrulamaPenceresi.resx">
       <DependentUpon>FormStokGirisDogrulamaPenceresi.cs</DependentUpon>

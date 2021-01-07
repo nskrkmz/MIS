@@ -86,3 +86,6 @@ B:\MIS\obj\Debug\MIS.csproj.CopyComplete
 B:\MIS\obj\Debug\MIS.exe
 B:\MIS\obj\Debug\MIS.pdb
 B:\MIS\obj\Debug\MIS.FormPersonelKayitEkrani.resources
+C:\MIS\obj\Debug\MIS.FormPersonelKayitEkrani.resources
+C:\MIS\obj\Debug\MIS.FormSilDogrulama.resources
+C:\MIS\obj\Debug\MIS.FormBorcOdemeEkranı.resources
