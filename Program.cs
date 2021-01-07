@@ -24,7 +24,8 @@ namespace MIS
             //Application.Run(new FormSatisEkraniDogrulamaPenceresi());
             //Application.Run(new FormPersonelKayitEkrani());
             //Application.Run(new FormBorcOdemeEkranı());
-            Application.Run(new FormStokGirisEkrani());
+            //Application.Run(new FormStokGirisEkrani());
+            Application.Run(new FormRaporlamaEkranı());
 
         }
     }
