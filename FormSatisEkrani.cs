@@ -28,11 +28,26 @@ namespace MIS
 
         private void VeresiyeÖdemeButonu_Click(object sender, EventArgs e)
         {
-                FormVeresiyeMusteriSistemi vm= new FormVeresiyeMusteriSistemi();
-                vm.StartPosition = FormStartPosition.Manual;
-                vm.Left = 1150;
-                vm.Top = 345;
-                vm.Show();  
+            // Lokasyon ayarlamaları yapıldı
+            FormVeresiyeMusteriSistemi vm= new FormVeresiyeMusteriSistemi();
+            vm.StartPosition = FormStartPosition.Manual;
+            //vm.Left = 1150;
+            //vm.Top = 345;
+            vm.Location = new Point((this.Location.X+675),(this.Location.Y+30));
+            vm.Show(); 
+
+            /*var i = Application.OpenForms.OfType<Form>().Select(x => x.Right).ToList().Max();
+            FormVeresiyeMusteriSistemi vmd = new FormVeresiyeMusteriSistemi();
+            vmd.StartPosition = FormStartPosition.Manual;
+            vmd.Location = new Point(i, this.Location.Y);
+            vmd.Location = new Point(i, this.Location.X);
+            vmd.Show();*/
+
+            /*FormVeresiyeMusteriSistemi vm = new FormVeresiyeMusteriSistemi();
+            vm.Location = new Point(this.Location.Y);
+            vm.Location = new Point(this.Location.X);
+            vm.Show();*/
+
         }
 
         private void NakitÖdemeYöntemiBut_Click(object sender, EventArgs e)
