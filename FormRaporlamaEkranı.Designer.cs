@@ -38,28 +38,28 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Location = new System.Drawing.Point(23, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(195, 33);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Ürün Bazlı Kar-Zarar";
+            this.button1.Text = "Kar-Zarar(Ürün)";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.Location = new System.Drawing.Point(224, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(195, 33);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Total Borç Rapou";
+            this.button2.Text = "Total Borç Raporu";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.Location = new System.Drawing.Point(425, 12);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(195, 33);
@@ -70,18 +70,18 @@
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button4.Location = new System.Drawing.Point(626, 12);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(195, 33);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Tarih Bazlı Kar-Zarar";
+            this.button4.Text = "Kar-Zarar(Tarih)";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button5.Location = new System.Drawing.Point(827, 12);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(195, 33);
@@ -91,7 +91,7 @@
             // 
             // button6
             // 
-            this.button6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button6.Location = new System.Drawing.Point(1028, 12);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(195, 33);

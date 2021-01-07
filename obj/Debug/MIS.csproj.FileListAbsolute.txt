@@ -54,7 +54,6 @@ D:\WorkSpace\MIS\obj\Debug\MIS.Migrations.InitialCreate.resources
 C:\MIS\obj\Debug\MIS.FormSatisEkraniDogrulamaPenceresi.resources
 C:\MIS\obj\Debug\MIS.Migrations.InitialCreate.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.FormSatisEkraniDogrulamaPenceresi.resources
-D:\WorkSpace\MIS\obj\Debug\MIS.FormVeresiyeMüşteriSistemi.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.Migrations.enes.resources
 C:\MIS\obj\Debug\MIS.Migrations.enes.resources
 C:\MIS\obj\Debug\MIS.FormVeresiyeMüşteriKayit.resources
@@ -91,3 +90,8 @@ C:\MIS\obj\Debug\MIS.FormSilDogrulama.resources
 C:\MIS\obj\Debug\MIS.FormBorcOdemeEkranı.resources
 B:\MIS\obj\Debug\MIS.FormBorcOdemeEkranı.resources
 B:\MIS\obj\Debug\MIS.FormSilDogrulama.resources
+D:\WorkSpace\MIS\obj\Debug\MIS.FormBorcOdemeEkranı.resources
+D:\WorkSpace\MIS\obj\Debug\MIS.FormPersonelKayitEkrani.resources
+D:\WorkSpace\MIS\obj\Debug\MIS.FormSilDogrulama.resources
+D:\WorkSpace\MIS\obj\Debug\MIS.FormVeresiyeMusteriSistemi.resources
+D:\WorkSpace\MIS\obj\Debug\MIS.FormVeresiyeMüşteriKayit.resources
