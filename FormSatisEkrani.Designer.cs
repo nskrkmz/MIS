@@ -46,9 +46,9 @@
             this.VeresiyeÖdemeButonu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.VeresiyeÖdemeButonu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.VeresiyeÖdemeButonu.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.73585F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.VeresiyeÖdemeButonu.Location = new System.Drawing.Point(12, 476);
+            this.VeresiyeÖdemeButonu.Location = new System.Drawing.Point(448, 404);
             this.VeresiyeÖdemeButonu.Name = "VeresiyeÖdemeButonu";
-            this.VeresiyeÖdemeButonu.Size = new System.Drawing.Size(195, 44);
+            this.VeresiyeÖdemeButonu.Size = new System.Drawing.Size(208, 44);
             this.VeresiyeÖdemeButonu.TabIndex = 2;
             this.VeresiyeÖdemeButonu.Text = "Veresiye";
             this.VeresiyeÖdemeButonu.UseVisualStyleBackColor = false;
@@ -58,12 +58,11 @@
             // 
             this.PeşinÖdemeButonu.BackColor = System.Drawing.Color.SlateGray;
             this.PeşinÖdemeButonu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PeşinÖdemeButonu.FlatAppearance.BorderSize = 5;
             this.PeşinÖdemeButonu.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PeşinÖdemeButonu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PeşinÖdemeButonu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PeşinÖdemeButonu.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.73585F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PeşinÖdemeButonu.Location = new System.Drawing.Point(213, 476);
+            this.PeşinÖdemeButonu.Location = new System.Drawing.Point(448, 454);
             this.PeşinÖdemeButonu.Name = "PeşinÖdemeButonu";
             this.PeşinÖdemeButonu.Size = new System.Drawing.Size(208, 45);
             this.PeşinÖdemeButonu.TabIndex = 2;
@@ -73,7 +72,7 @@
             // richTextBox3
             // 
             this.richTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.richTextBox3.Location = new System.Drawing.Point(3, 71);
+            this.richTextBox3.Location = new System.Drawing.Point(12, 71);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(644, 316);
             this.richTextBox3.TabIndex = 3;
@@ -95,7 +94,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.DimGray;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(8, 406);
+            this.label1.Location = new System.Drawing.Point(231, 404);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 24);
             this.label1.TabIndex = 7;
@@ -105,7 +104,7 @@
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(185, 406);
+            this.comboBox1.Location = new System.Drawing.Point(231, 450);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(171, 21);
             this.comboBox1.TabIndex = 8;
@@ -115,15 +114,15 @@
             // 
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(185, 435);
+            this.comboBox2.Location = new System.Drawing.Point(12, 404);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(171, 21);
+            this.comboBox2.Size = new System.Drawing.Size(176, 21);
             this.comboBox2.TabIndex = 9;
             // 
             // btnSıl
             // 
             this.btnSıl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSıl.Location = new System.Drawing.Point(3, 433);
+            this.btnSıl.Location = new System.Drawing.Point(12, 440);
             this.btnSıl.Name = "btnSıl";
             this.btnSıl.Size = new System.Drawing.Size(176, 37);
             this.btnSıl.TabIndex = 10;
@@ -136,7 +135,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(947, 532);
+            this.ClientSize = new System.Drawing.Size(940, 532);
             this.Controls.Add(this.btnSıl);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
