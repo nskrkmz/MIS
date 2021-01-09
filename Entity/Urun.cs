@@ -18,6 +18,12 @@ namespace MIS.Entity
         public string urunSTT { get; set; }
         public int irsaliyeNo { get; set; }
 
+        // İlişkiler Tanımlandı
+        public Islem Islem { get; set; }
+        public Depo Depo { get; set; }
+        public Irsaliye Irsaliye { get; set; }
+
+
 
 
     }
