@@ -29,11 +29,9 @@ namespace MIS
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             FormVeresiyeMusteriSistemi vm = new FormVeresiyeMusteriSistemi();
             vm.StartPosition = FormStartPosition.Manual;
-            vm.Left = 1150;
-            vm.Top = 345;
+            vm.Location = new Point((this.Location.X + 0), (this.Location.Y + 0));
             vm.Show();
         }
     }
