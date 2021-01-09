@@ -70,5 +70,10 @@ namespace MIS
             boe.Location = new Point((this.Location.X + 257), (this.Location.Y + 100));
             boe.Show();
         }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
