@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MIS.Entity
 {
-    class Musteri
+    public class Musteri
     {
         [Key]
         public int musteriID { get; set; }
@@ -16,6 +16,10 @@ namespace MIS.Entity
         public string musteriAd { get; set; }
         public string musteriSoyad { get; set; }
         public int musteriTel { get; set; }
+
+        // İlişkiler Tanımlandı
+        public ICollection<MusteriBorc> MusteriBorcs { get; set; }
+        public ICollection<Fis> Fis { get; set; }
 
     }
 }

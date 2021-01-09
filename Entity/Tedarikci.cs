@@ -7,10 +7,15 @@ using System.Threading.Tasks;
 
 namespace MIS.Entity
 {
-    class Tedarikci
+    public class Tedarikci
     {
         [Key]
         public int tedarikciID { get; set; }
         public string tedarikciIsim { get; set; }
+
+        // İlişkiler Tanımlandı
+        public ICollection<Irsaliye> Irsaliyes { get; set; }
+        public ICollection<TedarikciBorc> tedarikciBorcs { get; set; }
+        public ICollection<Depo> Depos { get; set; }
     }
 }

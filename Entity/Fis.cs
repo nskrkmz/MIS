@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MIS.Entity
 {
-    class Fis
+    public class Fis
     {
         [Key]
         public int fisNo { get; set; }
@@ -15,6 +15,12 @@ namespace MIS.Entity
         public string islemTarihi { get; set; }
         public int odemeTipi { get; set; }
         public int islemTutar { get; set; }
+
+        // İlişkiler Tanımlandı
+        public MusteriBorc MusteriBorc { get; set; }
+        public Musteri Musteri { get; set; }
+        public BorcluMusteri BorcluMusteri { get; set; }
+        public Islem Islem { get; set; }
 
     }
 }
