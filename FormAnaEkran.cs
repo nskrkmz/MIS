@@ -51,7 +51,7 @@ namespace MIS
         {
             FormRaporlamaEkranı re = new FormRaporlamaEkranı();
             re.StartPosition = FormStartPosition.Manual;
-            re.Location = new Point((this.Location.X + 257), (this.Location.Y + 100));
+            re.Location = new Point((this.Location.X + 250), (this.Location.Y + 2));
             re.Show();
         }
 
@@ -67,7 +67,7 @@ namespace MIS
         {
             FormBorcOdemeEkranı boe = new FormBorcOdemeEkranı();
             boe.StartPosition = FormStartPosition.Manual;
-            boe.Location = new Point((this.Location.X + 257), (this.Location.Y + 100));
+            boe.Location = new Point((this.Location.X + 250), (this.Location.Y + 2));
             boe.Show();
         }
 

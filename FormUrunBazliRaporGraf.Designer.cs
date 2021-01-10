@@ -50,15 +50,16 @@ namespace MIS
             series1.Legend = "Legend1";
             series1.Name = "Urunler";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(940, 450);
+            this.chart1.Size = new System.Drawing.Size(957, 672);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // FormUrunBazliRaporGraf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(940, 450);
+            this.ClientSize = new System.Drawing.Size(957, 672);
             this.Controls.Add(this.chart1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUrunBazliRaporGraf";

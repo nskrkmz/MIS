@@ -145,3 +145,4 @@ C:\AnaProje\MIS\bin\Debug\EntityFramework.xml
 C:\AnaProje\MIS\bin\Debug\EntityFramework.SqlServer.xml
 C:\AnaProje\MIS\obj\Debug\MIS.csproj.CopyComplete
 C:\MIS\obj\Debug\MIS.FormUrunBazliRaporGraf.resources
+C:\AnaProje\MIS\obj\Debug\MIS.FormUrunBazliRaporGraf.resources
