@@ -20,6 +20,7 @@ namespace MIS.Entity
         public string urunSTT { get; set; }
         public int urunIrsaliyeNo { get; set; }
         public string urunKategori { get; set; }
+        public float urunYuzdeKar { get; set; }
 
         // İlişkiler Tanımlandı
         ///public Islem Islem { get; set; }

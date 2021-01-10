@@ -23,8 +23,8 @@ namespace MIS
 
         private void FormAnaEkran_Load(object sender, EventArgs e)
         {
-            //Context cntxt =new Context();//Context sınıfından nesne yaratıldı
-            //cntxt.Database.Create();//Veritabanı oluşturuldu
+            Context cntxt =new Context();//Context sınıfından nesne yaratıldı
+            cntxt.Database.Create();//Veritabanı oluşturuldu
 
          //   FormMenu frmMenu = new FormMenu();
           //  frmMenu.MdiParent = this;
