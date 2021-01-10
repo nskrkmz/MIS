@@ -129,12 +129,6 @@
     <Compile Include="FormStokGirisEkrani.Designer.cs">
       <DependentUpon>FormStokGirisEkrani.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMenu.Designer.cs">
-      <DependentUpon>FormMenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormVeresiyeMusteriSistemi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,9 +181,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormStokGirisEkrani.resx">
       <DependentUpon>FormStokGirisEkrani.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMenu.resx">
-      <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVeresiyeMusteriSistemi.resx">
       <DependentUpon>FormVeresiyeMusteriSistemi.cs</DependentUpon>
