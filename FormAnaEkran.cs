@@ -59,7 +59,7 @@ namespace MIS
         {
             FormStokGirisEkrani sge = new FormStokGirisEkrani();
             sge.StartPosition = FormStartPosition.Manual;
-            sge.Location = new Point((this.Location.X + 257), (this.Location.Y + 100));
+            sge.Location = new Point((this.Location.X + 250), (this.Location.Y + 2));
             sge.Show();
         }
 
