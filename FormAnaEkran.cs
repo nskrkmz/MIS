@@ -43,7 +43,7 @@ namespace MIS
         {
             FormPersonelKayitEkrani pke = new FormPersonelKayitEkrani();
             pke.StartPosition = FormStartPosition.Manual;
-            pke.Location = new Point((this.Location.X + 257), (this.Location.Y + 100));
+            pke.Location = new Point((this.Location.X + 250), (this.Location.Y + 2));
             pke.Show();
         }
 

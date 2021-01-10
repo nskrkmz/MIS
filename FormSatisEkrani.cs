@@ -33,7 +33,7 @@ namespace MIS
             vm.StartPosition = FormStartPosition.Manual;
             //vm.Left = 1150;
             //vm.Top = 345;
-            vm.Location = new Point((this.Location.X+675),(this.Location.Y+47));
+            vm.Location = new Point((this.Location.X+675),(this.Location.Y+85));
             vm.Show(); 
 
             /*var i = Application.OpenForms.OfType<Form>().Select(x => x.Right).ToList().Max();
