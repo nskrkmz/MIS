@@ -36,5 +36,10 @@ namespace MIS
         {
 
         }
+
+        private void btnBorcSorgula_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
