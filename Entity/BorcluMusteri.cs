@@ -10,8 +10,8 @@ namespace MIS.Entity
     public class BorcluMusteri
     {
         [Key]
-        public int musteriID { get; set; }
-        public int fisNo { get; set; }
+        public int borcluMusteriMusteriID { get; set; }
+        public int borcluMusterifisNo { get; set; }
 
         // İlişkiler Tanımlandı
        /// public ICollection<Fis> Fis { get; set; }

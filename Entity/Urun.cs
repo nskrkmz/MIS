@@ -12,11 +12,11 @@ namespace MIS.Entity
         [Key]
         public int urunID { get; set; }//Urun tablosun key'i urunID olarak tanımlandı
 
-        public string depoTarih { get; set; }
+        public string urunDepoTarih { get; set; }
         public int urunAlisFiyat { get; set; }
         public int urunGr { get; set; }
         public string urunSTT { get; set; }
-        public int irsaliyeNo { get; set; }
+        public int urunIrsaliyeNo { get; set; }
 
         // İlişkiler Tanımlandı
         ///public Islem Islem { get; set; }

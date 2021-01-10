@@ -10,10 +10,10 @@ namespace MIS.Entity
      public class MusteriBorc
     {
         [Key]
-        public int musteriID { get; set; }
-        public int fisNo { get; set; }
-        public int calisanID { get; set; }
-        public bool durum { get; set; }
+        public int musteriBorcMusteriID { get; set; }
+        public int musteriBorcFisNo { get; set; }
+        public int musteriBorcCalisanID { get; set; }
+        public bool musteriBorcDurum { get; set; }
 
         // İlişkiler Tanımlandı
         ///public ICollection<Fis> Fis { get; set; }

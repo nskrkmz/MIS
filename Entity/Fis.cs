@@ -11,7 +11,7 @@ namespace MIS.Entity
     {
         [Key]
         public int fisNo { get; set; }
-        public int musteriID { get; set; }
+        public int fisMusteriID { get; set; }
         public string islemTarihi { get; set; }
         public int odemeTipi { get; set; }
         public int islemTutar { get; set; }

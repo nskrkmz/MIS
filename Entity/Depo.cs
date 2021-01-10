@@ -10,10 +10,10 @@ namespace MIS.Entity
     public class Depo
     {
         [Key]
-        public int urunID { get; set; }
+        public int depoUrunID { get; set; }
         public int urunAdet { get; set; }
-        public int tedarikciID { get; set; }
-        public int calisanID { get; set; }
+        public int depoTedarikciID { get; set; }
+        public int depoCalisanID { get; set; }
 
         // İlişkiler Tanımlandı
         ///public ICollection<Urun> Uruns { get; set; }

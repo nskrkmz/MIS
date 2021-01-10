@@ -10,8 +10,8 @@ namespace MIS.Entity
     public class Islem
     {
         [Key]
-        public int fisNo { get; set; }
-        public int urunID { get; set; }
+        public int islemFisNo { get; set; }
+        public int islemUrunID { get; set; }
         public string islemTarihi { get; set; }
 
         // İlişkiler Tanımlandı
