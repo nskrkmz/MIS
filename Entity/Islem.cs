@@ -16,7 +16,7 @@ namespace MIS.Entity
 
         // İlişkiler Tanımlandı
         public ICollection<Urun> Uruns { get; set; }
-        public Fis Fis { get; set; }
+        //public Fis Fis { get; set; }
 
     }
 }
