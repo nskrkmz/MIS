@@ -12,6 +12,7 @@ namespace MIS.Entity
         [Key]
         public int tedarikciID { get; set; }
         public string tedarikciIsim { get; set; }
+        public string tedarikciKategori{ get; set; }
 
         // İlişkiler Tanımlandı
         ///public ICollection<Irsaliye> Irsaliyes { get; set; }

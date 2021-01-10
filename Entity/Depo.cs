@@ -10,6 +10,7 @@ namespace MIS.Entity
     public class Depo
     {
         [Key]
+        public int depoUrunEklemeSirasi { get; set; }
         public int depoUrunID { get; set; }
         public int urunAdet { get; set; }
         public int depoTedarikciID { get; set; }

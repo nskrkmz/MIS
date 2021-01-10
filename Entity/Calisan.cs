@@ -15,6 +15,7 @@ namespace MIS.Entity
         public string calisanAd { get; set; }
         public string calisanSoyad { get; set; }
         public string calisanGorev { get; set; }
+        public int calisanMaas { get; set; }
 
         // İlişkiler Tanımlandı
         ///public ICollection<MusteriBorc> MusteriBorcs { get; set; }

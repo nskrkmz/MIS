@@ -10,6 +10,7 @@ namespace MIS.Entity
     public class Irsaliye
     {
         [Key]
+        public int irsaliyeSirasi { get; set; }
         public int irsaliyeNo { get; set; }
         public int irsaliyeTedarikciID { get; set; }
         public int irsaliyeUrunID { get; set; }
