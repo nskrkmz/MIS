@@ -19,8 +19,8 @@ namespace MIS.Entity
         public string tarih { get; set; }
 
         // İlişkiler Tanımlandı
-        public TedarikciBorc TedarikciBorc { get; set; }
-        public Tedarikci Tedarikci { get; set; }
+        ///public TedarikciBorc TedarikciBorc { get; set; }
+        ///public Tedarikci Tedarikci { get; set; }
         //public Urun Urun { get; set; }
 
     }

@@ -18,8 +18,8 @@ namespace MIS.Entity
         public int musteriTel { get; set; }
 
         // İlişkiler Tanımlandı
-        public ICollection<MusteriBorc> MusteriBorcs { get; set; }
-        public ICollection<Fis> Fis { get; set; }
+        ///public ICollection<MusteriBorc> MusteriBorcs { get; set; }
+        ///public ICollection<Fis> Fis { get; set; }
 
     }
 }

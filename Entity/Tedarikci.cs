@@ -14,8 +14,8 @@ namespace MIS.Entity
         public string tedarikciIsim { get; set; }
 
         // İlişkiler Tanımlandı
-        public ICollection<Irsaliye> Irsaliyes { get; set; }
-        public ICollection<TedarikciBorc> tedarikciBorcs { get; set; }
-        public ICollection<Depo> Depos { get; set; }
+        ///public ICollection<Irsaliye> Irsaliyes { get; set; }
+        ///public ICollection<TedarikciBorc> tedarikciBorcs { get; set; }
+        ///public ICollection<Depo> Depos { get; set; }
     }
 }
