@@ -20,7 +20,7 @@ namespace MIS.Entity
         public MusteriBorc MusteriBorc { get; set; }
         public Musteri Musteri { get; set; }
         public BorcluMusteri BorcluMusteri { get; set; }
-        public Islem Islem { get; set; }
+        //public Islem Islem { get; set; }
 
     }
 }

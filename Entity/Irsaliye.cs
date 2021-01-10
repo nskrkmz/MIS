@@ -21,7 +21,7 @@ namespace MIS.Entity
         // İlişkiler Tanımlandı
         public TedarikciBorc TedarikciBorc { get; set; }
         public Tedarikci Tedarikci { get; set; }
-        public Urun Urun { get; set; }
+        //public Urun Urun { get; set; }
 
     }
 }

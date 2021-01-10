@@ -18,7 +18,7 @@ namespace MIS.Entity
 
         // İlişkiler Tanımlandı
         public ICollection<MusteriBorc> MusteriBorcs { get; set; }
-        public Depo Depo { get; set; }
+        //public Depo Depo { get; set; }
 
     }
 }
