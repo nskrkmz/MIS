@@ -21,7 +21,7 @@ namespace MIS
 
         private void FormUrunBazliRaporGraf_Load(object sender, EventArgs e)
         {
-            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True");
+            /*SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True");
 
             baglanti.Open();
             SqlCommand komut = new SqlCommand("Select urunAd, urunYuzdeKar From Uruns", baglanti);
@@ -30,7 +30,12 @@ namespace MIS
             {
                 chart1.Series["Urunler"].Points.AddXY(oku[0].ToString(), oku[1]);
             }
-            baglanti.Close();
+            baglanti.Close();*/
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
