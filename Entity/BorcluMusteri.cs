@@ -14,7 +14,7 @@ namespace MIS.Entity
         public int fisNo { get; set; }
 
         // İlişkiler Tanımlandı
-        public ICollection<Fis> Fis { get; set; }
+       /// public ICollection<Fis> Fis { get; set; }
     }
 
 

@@ -16,9 +16,9 @@ namespace MIS.Entity
         public bool durum { get; set; }
 
         // İlişkiler Tanımlandı
-        public ICollection<Fis> Fis { get; set; }
-        public ICollection<Calisan> Calisans { get; set; }
-        public Musteri Musteri { get; set; }
+        ///public ICollection<Fis> Fis { get; set; }
+        ///public ICollection<Calisan> Calisans { get; set; }
+        ///public Musteri Musteri { get; set; }
 
     }
 }

@@ -15,7 +15,7 @@ namespace MIS.Entity
         public string islemTarihi { get; set; }
 
         // İlişkiler Tanımlandı
-        public ICollection<Urun> Uruns { get; set; }
+        ///public ICollection<Urun> Uruns { get; set; }
         //public Fis Fis { get; set; }
 
     }

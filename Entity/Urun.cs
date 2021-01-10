@@ -19,8 +19,8 @@ namespace MIS.Entity
         public int irsaliyeNo { get; set; }
 
         // İlişkiler Tanımlandı
-        public Islem Islem { get; set; }
-        public Depo Depo { get; set; }
+        ///public Islem Islem { get; set; }
+        ///public Depo Depo { get; set; }
         //public Irsaliye Irsaliye { get; set; }
 
 

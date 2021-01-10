@@ -17,7 +17,7 @@ namespace MIS.Entity
         public string calisanGorev { get; set; }
 
         // İlişkiler Tanımlandı
-        public ICollection<MusteriBorc> MusteriBorcs { get; set; }
+        ///public ICollection<MusteriBorc> MusteriBorcs { get; set; }
         //public Depo Depo { get; set; }
 
     }

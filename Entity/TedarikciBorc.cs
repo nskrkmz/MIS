@@ -15,7 +15,7 @@ namespace MIS.Entity
         public bool durum { get; set; }
 
         // İlişkiler Tanımlandı
-        public ICollection<Irsaliye> Irsaliyes { get; set; }
-        public Tedarikci Tedarikci { get; set; }
+        ///public ICollection<Irsaliye> Irsaliyes { get; set; }
+        ///public Tedarikci Tedarikci { get; set; }
     }
 }

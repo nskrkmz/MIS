@@ -16,8 +16,8 @@ namespace MIS.Entity
         public int calisanID { get; set; }
 
         // İlişkiler Tanımlandı
-        public ICollection<Urun> Uruns { get; set; }
-        public ICollection<Tedarikci> Tedarikcis { get; set; }
+        ///public ICollection<Urun> Uruns { get; set; }
+        ///public ICollection<Tedarikci> Tedarikcis { get; set; }
         //public Calisan Calisan { get; set; }
 
     }

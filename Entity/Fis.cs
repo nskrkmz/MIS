@@ -17,9 +17,9 @@ namespace MIS.Entity
         public int islemTutar { get; set; }
 
         // İlişkiler Tanımlandı
-        public MusteriBorc MusteriBorc { get; set; }
-        public Musteri Musteri { get; set; }
-        public BorcluMusteri BorcluMusteri { get; set; }
+        ///public MusteriBorc MusteriBorc { get; set; }
+        ///public Musteri Musteri { get; set; }
+        ///public BorcluMusteri BorcluMusteri { get; set; }
         //public Islem Islem { get; set; }
 
     }
