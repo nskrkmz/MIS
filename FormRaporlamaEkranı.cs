@@ -39,7 +39,10 @@ namespace MIS
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            FormUrunBazliRaporGraf ubrg = new FormUrunBazliRaporGraf();
+            ubrg.StartPosition = FormStartPosition.Manual;
+            ubrg.Location = new Point((this.Location.X + 0 ), (this.Location.Y + 50));
+            ubrg.Show();
         }
     }
 }
