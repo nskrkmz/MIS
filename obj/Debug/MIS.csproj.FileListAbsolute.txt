@@ -48,14 +48,11 @@ C:\MIS\bin\Debug\EntityFramework.SqlServer.dll
 C:\MIS\bin\Debug\EntityFramework.xml
 C:\MIS\bin\Debug\EntityFramework.SqlServer.xml
 C:\MIS\obj\Debug\MIS.FormRaporlamaEkranı.resources
-C:\MIS\obj\Debug\MIS.FormMenu.resources
 C:\MIS\obj\Debug\MIS.csproj.CopyComplete
 D:\WorkSpace\MIS\obj\Debug\MIS.Migrations.InitialCreate.resources
 C:\MIS\obj\Debug\MIS.FormSatisEkraniDogrulamaPenceresi.resources
-C:\MIS\obj\Debug\MIS.Migrations.InitialCreate.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.FormSatisEkraniDogrulamaPenceresi.resources
 D:\WorkSpace\MIS\obj\Debug\MIS.Migrations.enes.resources
-C:\MIS\obj\Debug\MIS.Migrations.enes.resources
 C:\MIS\obj\Debug\MIS.FormVeresiyeMüşteriKayit.resources
 C:\MIS\obj\Debug\MIS.FormVeresiyeMusteriSistemi.resources
 B:\MIS\bin\Debug\MIS.exe.config
