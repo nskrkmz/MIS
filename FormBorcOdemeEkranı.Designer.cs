@@ -47,7 +47,7 @@ namespace MIS
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(235, 24);
+            this.label1.Size = new System.Drawing.Size(220, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Veresiye Müşteri Listesi";
             // 
@@ -72,6 +72,7 @@ namespace MIS
             this.btnBorcSorgula.TabIndex = 2;
             this.btnBorcSorgula.Text = "BORÇ SORGULA";
             this.btnBorcSorgula.UseVisualStyleBackColor = true;
+            this.btnBorcSorgula.Click += new System.EventHandler(this.btnBorcSorgula_Click);
             // 
             // richTextBox3
             // 
@@ -96,7 +97,7 @@ namespace MIS
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(17, 281);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 15);
+            this.label2.Size = new System.Drawing.Size(75, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "TOTAL BORÇ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -107,7 +108,7 @@ namespace MIS
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(17, 322);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 15);
+            this.label3.Size = new System.Drawing.Size(160, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "ÖDEMEK İSTEDİĞİNİZ TUTAR";
             this.label3.Click += new System.EventHandler(this.label2_Click);

@@ -23,8 +23,8 @@ namespace MIS
 
         private void FormAnaEkran_Load(object sender, EventArgs e)
         {
-            Context cntxt =new Context();//Context sınıfından nesne yaratıldı
-            cntxt.Database.Create();//Veritabanı oluşturuldu
+            //Context cntxt =new Context();//Context sınıfından nesne yaratıldı
+            //cntxt.Database.Create();//Veritabanı oluşturuldu
 
          //   FormMenu frmMenu = new FormMenu();
           //  frmMenu.MdiParent = this;
@@ -35,7 +35,7 @@ namespace MIS
         {
             FormSatisEkrani se = new FormSatisEkrani();
             se.StartPosition = FormStartPosition.Manual;
-            se.Location = new Point((this.Location.X + 257), (this.Location.Y + 100));
+            se.Location = new Point((this.Location.X + 250), (this.Location.Y + 2));
             se.Show();
         }
 
