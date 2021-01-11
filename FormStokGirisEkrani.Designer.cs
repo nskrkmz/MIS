@@ -56,6 +56,7 @@
             this.btnStogaIsle.TabIndex = 0;
             this.btnStogaIsle.Text = "Stoğa İşle";
             this.btnStogaIsle.UseVisualStyleBackColor = false;
+            this.btnStogaIsle.Click += new System.EventHandler(this.btnStogaIsle_Click);
             // 
             // openFileDialog1
             // 
@@ -71,7 +72,7 @@
             this.btnDosyaSec.Name = "btnDosyaSec";
             this.btnDosyaSec.Size = new System.Drawing.Size(135, 65);
             this.btnDosyaSec.TabIndex = 1;
-            this.btnDosyaSec.Text = "Dosya Seç";
+            this.btnDosyaSec.Text = "Dosya Görüntüle";
             this.btnDosyaSec.UseVisualStyleBackColor = false;
             this.btnDosyaSec.Click += new System.EventHandler(this.btnDosyaSec_Click);
             // 
@@ -84,7 +85,7 @@
             "18061277",
             "18061263"});
             this.cbTedarikciBorcSorgula.Location = new System.Drawing.Point(22, 503);
-            this.cbTedarikciBorcSorgula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbTedarikciBorcSorgula.Margin = new System.Windows.Forms.Padding(4);
             this.cbTedarikciBorcSorgula.Name = "cbTedarikciBorcSorgula";
             this.cbTedarikciBorcSorgula.Size = new System.Drawing.Size(307, 24);
             this.cbTedarikciBorcSorgula.TabIndex = 2;
@@ -105,7 +106,7 @@
             this.btnTedarikciOdemeYap.BackColor = System.Drawing.Color.SlateGray;
             this.btnTedarikciOdemeYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnTedarikciOdemeYap.Location = new System.Drawing.Point(623, 783);
-            this.btnTedarikciOdemeYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTedarikciOdemeYap.Margin = new System.Windows.Forms.Padding(4);
             this.btnTedarikciOdemeYap.Name = "btnTedarikciOdemeYap";
             this.btnTedarikciOdemeYap.Size = new System.Drawing.Size(233, 96);
             this.btnTedarikciOdemeYap.TabIndex = 12;
@@ -141,7 +142,7 @@
             this.txtTedarikciBorcGiris.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtTedarikciBorcGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtTedarikciBorcGiris.Location = new System.Drawing.Point(289, 834);
-            this.txtTedarikciBorcGiris.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTedarikciBorcGiris.Margin = new System.Windows.Forms.Padding(4);
             this.txtTedarikciBorcGiris.Name = "txtTedarikciBorcGiris";
             this.txtTedarikciBorcGiris.Size = new System.Drawing.Size(232, 27);
             this.txtTedarikciBorcGiris.TabIndex = 8;
@@ -152,7 +153,7 @@
             this.txtTedarikciTotalBorc.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtTedarikciTotalBorc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtTedarikciTotalBorc.Location = new System.Drawing.Point(49, 834);
-            this.txtTedarikciTotalBorc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTedarikciTotalBorc.Margin = new System.Windows.Forms.Padding(4);
             this.txtTedarikciTotalBorc.Name = "txtTedarikciTotalBorc";
             this.txtTedarikciTotalBorc.Size = new System.Drawing.Size(232, 26);
             this.txtTedarikciTotalBorc.TabIndex = 9;
@@ -165,7 +166,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(15, 113);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(308, 39);
+            this.label4.Size = new System.Drawing.Size(246, 31);
             this.label4.TabIndex = 13;
             this.label4.Text = "Stok Giriş Bilgileri";
             // 
@@ -174,7 +175,7 @@
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(22, 536);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.Size = new System.Drawing.Size(1222, 239);

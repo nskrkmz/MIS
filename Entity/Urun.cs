@@ -16,7 +16,7 @@ namespace MIS.Entity
         public string urunDepoTarih { get; set; }
         public float urunAlisFiyat { get; set; }
         public float urunSatisFiyat { get; set; }
-        public int urunGr { get; set; }
+        public float urunGr { get; set; }
         public string urunSTT { get; set; }
         public int urunIrsaliyeNo { get; set; }
         public string urunKategori { get; set; }
