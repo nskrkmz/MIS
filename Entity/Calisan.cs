@@ -12,8 +12,7 @@ namespace MIS.Entity
         [Key]
         public int calisanID { get; set; }
         public int calisanSifre { get; set; }
-        public string calisanAd { get; set; }
-        public string calisanSoyad { get; set; }
+        public string calisanAdSoyad { get; set; }
         public string calisanGorev { get; set; }
         public int calisanMaas { get; set; }
 

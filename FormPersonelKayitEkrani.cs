@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using MIS.Entity;
 
 namespace MIS
 {
@@ -64,10 +66,25 @@ namespace MIS
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Calisan clsn = new Calisan();
+            Context cntx = new Context();
 
+            clsn.calisanAdSoyad = textBox1.Text;
+            clsn.calisanGorev = textBox3.Text;
+            clsn.calisanMaas = Convert.ToInt32(textBox4.Text);
+            clsn.calisanSifre = Convert.ToInt32(textBox5.Text);
+
+            cntx.Calisans.Add(clsn);
+            cntx.SaveChanges();
+            MessageBox.Show("Çalışan Başarıyla Kaydedildi !");
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
         }

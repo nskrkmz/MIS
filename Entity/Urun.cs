@@ -12,7 +12,7 @@ namespace MIS.Entity
         [Key]
         public int urunKalemMiktari{ get; set; }
         public int urunID { get; set; }
-        public string urunAd { get; set; }
+        public string urunAdi { get; set; }
         public string urunDepoTarih { get; set; }
         public float urunAlisFiyat { get; set; }
         public float urunSatisFiyat { get; set; }

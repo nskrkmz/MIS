@@ -13,6 +13,7 @@ namespace MIS.Entity
         public int musteriBorcMusteriID { get; set; }
         public int musteriBorcFisNo { get; set; }
         public int musteriBorcCalisanID { get; set; }
+        public int musteriGuncelBorc { get; set; } // Kalan borc
         public bool musteriBorcDurum { get; set; }
 
         // İlişkiler Tanımlandı

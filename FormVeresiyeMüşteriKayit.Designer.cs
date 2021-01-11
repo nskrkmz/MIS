@@ -29,94 +29,103 @@ namespace MIS
         /// </summary>
         private void InitializeComponent()
         {
-            this.KullanıcıNo = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnKayitOl = new System.Windows.Forms.Button();
+            this.lblIslemTrh = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblMusAdSoy = new System.Windows.Forms.Label();
+            this.txtIslemTarih = new System.Windows.Forms.TextBox();
+            this.txtMusteriTelNo = new System.Windows.Forms.TextBox();
+            this.txtMusAdSoy = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // KullanıcıNo
+            // btnKayitOl
             // 
-            this.KullanıcıNo.Location = new System.Drawing.Point(58, 49);
-            this.KullanıcıNo.Name = "KullanıcıNo";
-            this.KullanıcıNo.Size = new System.Drawing.Size(128, 20);
-            this.KullanıcıNo.TabIndex = 0;
-            this.KullanıcıNo.TextChanged += new System.EventHandler(this.KullanıcıNo_TextChanged);
+            this.btnKayitOl.Location = new System.Drawing.Point(63, 279);
+            this.btnKayitOl.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKayitOl.Name = "btnKayitOl";
+            this.btnKayitOl.Size = new System.Drawing.Size(171, 48);
+            this.btnKayitOl.TabIndex = 9;
+            this.btnKayitOl.Text = "Kayıt Ol";
+            this.btnKayitOl.UseVisualStyleBackColor = true;
+            this.btnKayitOl.Click += new System.EventHandler(this.btnKayitOl_Click);
             // 
-            // label1
+            // lblIslemTrh
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Kullanıcı No";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(58, 202);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 39);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Kayıt Ol";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.lblIslemTrh.AutoSize = true;
+            this.lblIslemTrh.Location = new System.Drawing.Point(59, 201);
+            this.lblIslemTrh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIslemTrh.Name = "lblIslemTrh";
+            this.lblIslemTrh.Size = new System.Drawing.Size(80, 17);
+            this.lblIslemTrh.TabIndex = 6;
+            this.lblIslemTrh.Text = "İşlem Tarihi";
+            this.lblIslemTrh.Click += new System.EventHandler(this.lblIslemTrh_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 83);
+            this.label2.Location = new System.Drawing.Point(59, 132);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Şifre";
-            this.label2.Click += new System.EventHandler(this.label1_Click);
+            this.label2.Size = new System.Drawing.Size(120, 17);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Telefon Numarasi";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // lblMusAdSoy
             // 
-            this.textBox1.Location = new System.Drawing.Point(58, 101);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(128, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.KullanıcıNo_TextChanged);
+            this.lblMusAdSoy.AutoSize = true;
+            this.lblMusAdSoy.Location = new System.Drawing.Point(59, 68);
+            this.lblMusAdSoy.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMusAdSoy.Name = "lblMusAdSoy";
+            this.lblMusAdSoy.Size = new System.Drawing.Size(119, 17);
+            this.lblMusAdSoy.TabIndex = 8;
+            this.lblMusAdSoy.Text = "Müşteri Ad Soyad";
+            this.lblMusAdSoy.Click += new System.EventHandler(this.lblMusAdSoy_Click);
             // 
-            // label3
+            // txtIslemTarih
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(55, 139);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 15);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "E-mail";
-            this.label3.Click += new System.EventHandler(this.label1_Click);
+            this.txtIslemTarih.Location = new System.Drawing.Point(63, 223);
+            this.txtIslemTarih.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIslemTarih.Name = "txtIslemTarih";
+            this.txtIslemTarih.Size = new System.Drawing.Size(169, 22);
+            this.txtIslemTarih.TabIndex = 3;
+            this.txtIslemTarih.TextChanged += new System.EventHandler(this.txtIslemTarih_TextChanged);
             // 
-            // textBox2
+            // txtMusteriTelNo
             // 
-            this.textBox2.Location = new System.Drawing.Point(58, 157);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(128, 20);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.TextChanged += new System.EventHandler(this.KullanıcıNo_TextChanged);
+            this.txtMusteriTelNo.Location = new System.Drawing.Point(63, 154);
+            this.txtMusteriTelNo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMusteriTelNo.Name = "txtMusteriTelNo";
+            this.txtMusteriTelNo.Size = new System.Drawing.Size(169, 22);
+            this.txtMusteriTelNo.TabIndex = 4;
+            this.txtMusteriTelNo.TextChanged += new System.EventHandler(this.txtMusteriTelNo_TextChanged);
+            // 
+            // txtMusAdSoy
+            // 
+            this.txtMusAdSoy.Location = new System.Drawing.Point(63, 90);
+            this.txtMusAdSoy.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMusAdSoy.Name = "txtMusAdSoy";
+            this.txtMusAdSoy.Size = new System.Drawing.Size(169, 22);
+            this.txtMusAdSoy.TabIndex = 5;
+            this.txtMusAdSoy.TextChanged += new System.EventHandler(this.txtMusAdSoy_TextChanged);
             // 
             // FormVeresiyeMüşteriKayit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(242, 403);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(323, 496);
+            this.Controls.Add(this.btnKayitOl);
+            this.Controls.Add(this.lblIslemTrh);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.KullanıcıNo);
+            this.Controls.Add(this.lblMusAdSoy);
+            this.Controls.Add(this.txtIslemTarih);
+            this.Controls.Add(this.txtMusteriTelNo);
+            this.Controls.Add(this.txtMusAdSoy);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormVeresiyeMüşteriKayit";
             this.Text = "FormVeresiyeMüşteriKayit";
+            this.Load += new System.EventHandler(this.FormVeresiyeMüşteriKayit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,12 +133,12 @@ namespace MIS
 
         #endregion
 
-        private System.Windows.Forms.TextBox KullanıcıNo;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnKayitOl;
+        private System.Windows.Forms.Label lblIslemTrh;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lblMusAdSoy;
+        private System.Windows.Forms.TextBox txtIslemTarih;
+        private System.Windows.Forms.TextBox txtMusteriTelNo;
+        private System.Windows.Forms.TextBox txtMusAdSoy;
     }
 }

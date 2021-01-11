@@ -13,8 +13,7 @@ namespace MIS.Entity
         public int musteriID { get; set; }
         public string musteriAlisverisTarihi { get; set; }
         public int musteriFisNo { get; set; }
-        public string musteriAd { get; set; }
-        public string musteriSoyad { get; set; }
+        public string musteriAdSoyad { get; set; }
         public int musteriTel { get; set; }
 
         // İlişkiler Tanımlandı
