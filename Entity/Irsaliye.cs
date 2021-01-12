@@ -12,7 +12,7 @@ namespace MIS.Entity
         [Key]
         public int irsaliyeSirasi { get; set; }
         public int irsaliyeNo { get; set; }
-        public int irsaliyeTedarikciID { get; set; }
+        public string irsaliyeTedarikciID { get; set; }
         public int irsaliyeUrunID { get; set; }
         public int birimFiyat { get; set; }
         public int miktar { get; set; }

@@ -11,7 +11,7 @@ namespace MIS.Entity
     {
         [Key]
         public int tedarikciBorcIslemSirasi { get; set; }
-        public int tedarikciBorcTedarikciID { get; set; }
+        public string tedarikciBorcTedarikciID { get; set; }
         public int tedarikciBorcirsaliyeNo { get; set; }
         public int tedarikciBorcIrsaliyeTutar { get; set; }
         public bool tedarikciBorcdurum { get; set; }

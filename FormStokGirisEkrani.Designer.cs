@@ -42,6 +42,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.lBStokGoruntule = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,10 +50,10 @@
             // 
             this.btnStogaIsle.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnStogaIsle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnStogaIsle.Location = new System.Drawing.Point(170, 26);
-            this.btnStogaIsle.Margin = new System.Windows.Forms.Padding(2);
+            this.btnStogaIsle.Location = new System.Drawing.Point(227, 32);
+            this.btnStogaIsle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStogaIsle.Name = "btnStogaIsle";
-            this.btnStogaIsle.Size = new System.Drawing.Size(103, 53);
+            this.btnStogaIsle.Size = new System.Drawing.Size(137, 65);
             this.btnStogaIsle.TabIndex = 0;
             this.btnStogaIsle.Text = "Stoğa İşle";
             this.btnStogaIsle.UseVisualStyleBackColor = false;
@@ -67,10 +68,10 @@
             // 
             this.btnDosyaSec.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnDosyaSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDosyaSec.Location = new System.Drawing.Point(11, 26);
-            this.btnDosyaSec.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDosyaSec.Location = new System.Drawing.Point(15, 32);
+            this.btnDosyaSec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDosyaSec.Name = "btnDosyaSec";
-            this.btnDosyaSec.Size = new System.Drawing.Size(101, 53);
+            this.btnDosyaSec.Size = new System.Drawing.Size(135, 65);
             this.btnDosyaSec.TabIndex = 1;
             this.btnDosyaSec.Text = "Dosya Görüntüle";
             this.btnDosyaSec.UseVisualStyleBackColor = false;
@@ -80,24 +81,21 @@
             // 
             this.cbTedarikciBorcSorgula.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.cbTedarikciBorcSorgula.FormattingEnabled = true;
-            this.cbTedarikciBorcSorgula.Items.AddRange(new object[] {
-            "18061256",
-            "18061277",
-            "18061263"});
-            this.cbTedarikciBorcSorgula.Location = new System.Drawing.Point(16, 409);
+            this.cbTedarikciBorcSorgula.Location = new System.Drawing.Point(239, 501);
+            this.cbTedarikciBorcSorgula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbTedarikciBorcSorgula.Name = "cbTedarikciBorcSorgula";
-            this.cbTedarikciBorcSorgula.Size = new System.Drawing.Size(231, 21);
+            this.cbTedarikciBorcSorgula.Size = new System.Drawing.Size(307, 24);
             this.cbTedarikciBorcSorgula.TabIndex = 2;
+            this.cbTedarikciBorcSorgula.SelectedIndexChanged += new System.EventHandler(this.cbTedarikciBorcSorgula_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(11, 364);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(35, 437);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 29);
+            this.label1.Size = new System.Drawing.Size(310, 31);
             this.label1.TabIndex = 3;
             this.label1.Text = "Tedarikçi Borç Sorgula";
             // 
@@ -105,9 +103,10 @@
             // 
             this.btnTedarikciOdemeYap.BackColor = System.Drawing.Color.SlateGray;
             this.btnTedarikciOdemeYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnTedarikciOdemeYap.Location = new System.Drawing.Point(482, 636);
+            this.btnTedarikciOdemeYap.Location = new System.Drawing.Point(643, 783);
+            this.btnTedarikciOdemeYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTedarikciOdemeYap.Name = "btnTedarikciOdemeYap";
-            this.btnTedarikciOdemeYap.Size = new System.Drawing.Size(175, 78);
+            this.btnTedarikciOdemeYap.Size = new System.Drawing.Size(233, 96);
             this.btnTedarikciOdemeYap.TabIndex = 12;
             this.btnTedarikciOdemeYap.Text = "ÖDEMEYİ GERÇEKLEŞTİR";
             this.btnTedarikciOdemeYap.UseVisualStyleBackColor = false;
@@ -117,9 +116,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(214, 655);
+            this.label3.Location = new System.Drawing.Point(285, 806);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(262, 22);
+            this.label3.Size = new System.Drawing.Size(291, 25);
             this.label3.TabIndex = 10;
             this.label3.Text = "ÖDEMEK İSTEDİĞİNİZ TUTAR";
             // 
@@ -128,9 +128,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(33, 654);
+            this.label2.Location = new System.Drawing.Point(44, 805);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 22);
+            this.label2.Size = new System.Drawing.Size(141, 25);
             this.label2.TabIndex = 11;
             this.label2.Text = "TOTAL BORÇ";
             // 
@@ -138,9 +139,10 @@
             // 
             this.txtTedarikciBorcGiris.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtTedarikciBorcGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTedarikciBorcGiris.Location = new System.Drawing.Point(217, 678);
+            this.txtTedarikciBorcGiris.Location = new System.Drawing.Point(289, 834);
+            this.txtTedarikciBorcGiris.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTedarikciBorcGiris.Name = "txtTedarikciBorcGiris";
-            this.txtTedarikciBorcGiris.Size = new System.Drawing.Size(175, 24);
+            this.txtTedarikciBorcGiris.Size = new System.Drawing.Size(232, 27);
             this.txtTedarikciBorcGiris.TabIndex = 8;
             this.txtTedarikciBorcGiris.Text = "10";
             // 
@@ -148,44 +150,50 @@
             // 
             this.txtTedarikciTotalBorc.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtTedarikciTotalBorc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTedarikciTotalBorc.Location = new System.Drawing.Point(37, 678);
+            this.txtTedarikciTotalBorc.Location = new System.Drawing.Point(49, 834);
+            this.txtTedarikciTotalBorc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTedarikciTotalBorc.Name = "txtTedarikciTotalBorc";
-            this.txtTedarikciTotalBorc.Size = new System.Drawing.Size(175, 24);
+            this.txtTedarikciTotalBorc.Size = new System.Drawing.Size(232, 26);
             this.txtTedarikciTotalBorc.TabIndex = 9;
             this.txtTedarikciTotalBorc.Text = "156456";
+            this.txtTedarikciTotalBorc.TextChanged += new System.EventHandler(this.txtTedarikciTotalBorc_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(11, 92);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(15, 113);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(225, 29);
+            this.label4.Size = new System.Drawing.Size(246, 31);
             this.label4.TabIndex = 13;
             this.label4.Text = "Stok Giriş Bilgileri";
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(16, 436);
+            this.dataGridView2.Location = new System.Drawing.Point(21, 537);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(916, 194);
+            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView2.Size = new System.Drawing.Size(1221, 239);
             this.dataGridView2.TabIndex = 15;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // lBStokGoruntule
             // 
             this.lBStokGoruntule.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lBStokGoruntule.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lBStokGoruntule.FormattingEnabled = true;
-            this.lBStokGoruntule.ItemHeight = 25;
-            this.lBStokGoruntule.Location = new System.Drawing.Point(9, 162);
-            this.lBStokGoruntule.Margin = new System.Windows.Forms.Padding(2);
+            this.lBStokGoruntule.ItemHeight = 29;
+            this.lBStokGoruntule.Location = new System.Drawing.Point(12, 199);
+            this.lBStokGoruntule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lBStokGoruntule.Name = "lBStokGoruntule";
-            this.lBStokGoruntule.Size = new System.Drawing.Size(925, 179);
+            this.lBStokGoruntule.Size = new System.Drawing.Size(1232, 207);
             this.lBStokGoruntule.TabIndex = 16;
             this.lBStokGoruntule.SelectedIndexChanged += new System.EventHandler(this.lBStokGoruntule_SelectedIndexChanged);
             // 
@@ -194,21 +202,32 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(13, 136);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(17, 167);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(962, 20);
+            this.label5.Size = new System.Drawing.Size(1035, 20);
             this.label5.TabIndex = 17;
             this.label5.Text = "Ürün ID \\ Ürün AD \\ Ürün Depo Tarihi \\ Ürün Alış Fiyatı \\ Ürün Satış Fiyatı \\ Ürü" +
     "n GR \\ STT \\ İrsaliye No \\ Kategori \\ %Kar";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(36, 501);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(196, 25);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Tedarikçi ID Seçiniz :";
+            // 
             // FormStokGirisEkrani
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(957, 725);
+            this.ClientSize = new System.Drawing.Size(1276, 892);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lBStokGoruntule);
             this.Controls.Add(this.dataGridView2);
@@ -223,7 +242,7 @@
             this.Controls.Add(this.btnDosyaSec);
             this.Controls.Add(this.btnStogaIsle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormStokGirisEkrani";
             this.Text = "FormStokGirisEkrani";
             this.Load += new System.EventHandler(this.FormStokGirisEkrani_Load);
@@ -249,5 +268,6 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.ListBox lBStokGoruntule;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
