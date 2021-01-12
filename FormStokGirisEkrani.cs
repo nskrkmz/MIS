@@ -181,5 +181,10 @@ namespace MIS
 
 
         }
+
+        private void FormStokGirisEkrani_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
