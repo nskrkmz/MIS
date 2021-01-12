@@ -10,7 +10,7 @@ namespace MIS.Entity
     public class Urun
     {
         [Key]
-        public int urunKalemMiktari{ get; set; }
+        public int barkodNumarasi{ get; set; }
         public int urunID { get; set; }
         public string urunAdi { get; set; }
         public string urunDepoTarih { get; set; }
