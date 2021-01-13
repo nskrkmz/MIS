@@ -173,3 +173,4 @@ D:\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
 D:\MIS\obj\Debug\MIS.csproj.CopyComplete
 D:\MIS\obj\Debug\MIS.exe
 D:\MIS\obj\Debug\MIS.pdb
+D:\MIS\obj\Debug\MIS.FormGiriş_KayıtEkrani.resources
