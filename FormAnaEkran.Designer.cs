@@ -51,8 +51,9 @@
             this.panel1.Controls.Add(this.btnSatis);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 688);
+            this.panel1.Size = new System.Drawing.Size(332, 839);
             this.panel1.TabIndex = 1;
             // 
             // btnCikis
@@ -64,10 +65,10 @@
             this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCikis.ForeColor = System.Drawing.Color.White;
-            this.btnCikis.Location = new System.Drawing.Point(1, 354);
-            this.btnCikis.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCikis.Location = new System.Drawing.Point(1, 436);
+            this.btnCikis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(246, 52);
+            this.btnCikis.Size = new System.Drawing.Size(328, 64);
             this.btnCikis.TabIndex = 8;
             this.btnCikis.Text = "Çıkış";
             this.btnCikis.UseVisualStyleBackColor = false;
@@ -82,10 +83,10 @@
             this.btnPersonelKayit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPersonelKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnPersonelKayit.ForeColor = System.Drawing.Color.White;
-            this.btnPersonelKayit.Location = new System.Drawing.Point(0, 298);
-            this.btnPersonelKayit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPersonelKayit.Location = new System.Drawing.Point(0, 367);
+            this.btnPersonelKayit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPersonelKayit.Name = "btnPersonelKayit";
-            this.btnPersonelKayit.Size = new System.Drawing.Size(246, 52);
+            this.btnPersonelKayit.Size = new System.Drawing.Size(328, 64);
             this.btnPersonelKayit.TabIndex = 7;
             this.btnPersonelKayit.Text = "Personel Kayıt";
             this.btnPersonelKayit.UseVisualStyleBackColor = false;
@@ -100,10 +101,10 @@
             this.btnRaporlama.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRaporlama.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnRaporlama.ForeColor = System.Drawing.Color.White;
-            this.btnRaporlama.Location = new System.Drawing.Point(0, 242);
-            this.btnRaporlama.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRaporlama.Location = new System.Drawing.Point(0, 298);
+            this.btnRaporlama.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRaporlama.Name = "btnRaporlama";
-            this.btnRaporlama.Size = new System.Drawing.Size(246, 52);
+            this.btnRaporlama.Size = new System.Drawing.Size(328, 64);
             this.btnRaporlama.TabIndex = 6;
             this.btnRaporlama.Text = "Raporlama";
             this.btnRaporlama.UseVisualStyleBackColor = false;
@@ -118,10 +119,10 @@
             this.btnStokGiris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStokGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnStokGiris.ForeColor = System.Drawing.Color.White;
-            this.btnStokGiris.Location = new System.Drawing.Point(0, 186);
-            this.btnStokGiris.Margin = new System.Windows.Forms.Padding(2);
+            this.btnStokGiris.Location = new System.Drawing.Point(0, 229);
+            this.btnStokGiris.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStokGiris.Name = "btnStokGiris";
-            this.btnStokGiris.Size = new System.Drawing.Size(246, 52);
+            this.btnStokGiris.Size = new System.Drawing.Size(328, 64);
             this.btnStokGiris.TabIndex = 5;
             this.btnStokGiris.Text = "Stok Giriş";
             this.btnStokGiris.UseVisualStyleBackColor = false;
@@ -136,10 +137,10 @@
             this.btnBorcOdeme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorcOdeme.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBorcOdeme.ForeColor = System.Drawing.Color.White;
-            this.btnBorcOdeme.Location = new System.Drawing.Point(0, 130);
-            this.btnBorcOdeme.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBorcOdeme.Location = new System.Drawing.Point(0, 160);
+            this.btnBorcOdeme.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBorcOdeme.Name = "btnBorcOdeme";
-            this.btnBorcOdeme.Size = new System.Drawing.Size(246, 52);
+            this.btnBorcOdeme.Size = new System.Drawing.Size(328, 64);
             this.btnBorcOdeme.TabIndex = 4;
             this.btnBorcOdeme.Text = "Borç Ödeme";
             this.btnBorcOdeme.UseVisualStyleBackColor = false;
@@ -154,10 +155,10 @@
             this.btnSatis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSatis.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSatis.ForeColor = System.Drawing.Color.White;
-            this.btnSatis.Location = new System.Drawing.Point(0, 74);
-            this.btnSatis.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSatis.Location = new System.Drawing.Point(0, 91);
+            this.btnSatis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSatis.Name = "btnSatis";
-            this.btnSatis.Size = new System.Drawing.Size(246, 52);
+            this.btnSatis.Size = new System.Drawing.Size(328, 64);
             this.btnSatis.TabIndex = 3;
             this.btnSatis.Text = "Satış";
             this.btnSatis.UseVisualStyleBackColor = false;
@@ -165,27 +166,29 @@
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(244, 0);
+            this.panel2.Location = new System.Drawing.Point(325, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(948, 696);
+            this.panel2.Size = new System.Drawing.Size(1264, 857);
             this.panel2.TabIndex = 3;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // FormAnaEkran
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1192, 688);
+            this.ClientSize = new System.Drawing.Size(1587, 839);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(1208, 729);
-            this.MinimumSize = new System.Drawing.Size(1208, 729);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(1605, 886);
+            this.MinimumSize = new System.Drawing.Size(1605, 886);
             this.Name = "FormAnaEkran";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Market Information System";

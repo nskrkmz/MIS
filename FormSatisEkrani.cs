@@ -24,12 +24,24 @@ namespace MIS
             panel2.Visible = false;
         }
 
+        static string conString = "Data Source=DESKTOP-B9HD7VV;Initial Catalog=MIS_DB;Integrated Security=True";
+        SqlConnection baglanti = new SqlConnection(conString);
+
         private void FormSatisEkrani_Load(object sender, EventArgs e)
         {
             // Ödeme yöntemi checkbox aracıyla seçiliyor
             // Kod ile ekleme yapılmasının sebebi daha sonra veri tabanında daha rahat kullanılmasını sağlamak için yoksa normal ekleme de yapılabilir.
             string[] odemeYontemi = { "NAKİT", "KART" };
             comboBox1.Items.AddRange(odemeYontemi);
+
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select *from Musteris", baglanti);
+            SqlDataReader read = komut.ExecuteReader();
+            while (read.Read())
+            {
+                VeresiyeListesiCb.Items.Add(read["musteriAdSoyad"]);
+            }
+            baglanti.Close();
         }
 
         private void VeresiyeÖdemeButonu_Click(object sender, EventArgs e)
@@ -136,6 +148,7 @@ namespace MIS
             {
                 MessageBox.Show("Ürün Silme Başarılı");
                 listBox1.Items.Remove(listBox1.SelectedItem);
+                textBox1.Clear();
                 panel1.Visible = false;
 
 
@@ -144,6 +157,7 @@ namespace MIS
             else
             {
                 MessageBox.Show("Yanlış ya da Eksik Şifre");
+                textBox1.Clear();
             }
         }
 
@@ -173,6 +187,22 @@ namespace MIS
         {
             panel3.Visible = true;
             panel2.Visible = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            textBox1.Clear();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

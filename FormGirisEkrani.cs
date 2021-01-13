@@ -57,7 +57,7 @@ namespace MIS
         {
             string kullaniciID = KullaniciNoGiris.Text;
             string sifre = sifreGiris.Text;
-            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True");
+            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-B9HD7VV;Initial Catalog=MIS_DB;Integrated Security=True");
             SqlCommand komut = new SqlCommand();
             baglanti.Open();
             komut.Connection = baglanti;

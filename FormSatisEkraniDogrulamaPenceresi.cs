@@ -29,5 +29,10 @@ namespace MIS
             fse.Show(); //Giriş butonuna basıldığında Satış ekranının açılmasını sağlar.
             this.Hide(); //Satış ekranı açıldıktan sonra doğrulama penceresini gizler kullanıcı kullandığı zaman herhangi bir sıkıntı yaratmaz.
         }
+
+        private void FormSatisEkraniDogrulamaPenceresi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

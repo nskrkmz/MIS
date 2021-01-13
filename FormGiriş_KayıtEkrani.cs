@@ -79,5 +79,10 @@ namespace MIS
         {
 
         }
+
+        private void FormGiriş_KayıtEkrani_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
