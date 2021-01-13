@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Data.SqlClient;
+using MIS.Entity;
 
 namespace MIS
 {
@@ -19,6 +20,8 @@ namespace MIS
         {
             InitializeComponent();
             panel1.Visible = false;
+            panel3.Visible = false;
+            panel2.Visible = false;
         }
 
         private void FormSatisEkrani_Load(object sender, EventArgs e)
@@ -31,13 +34,14 @@ namespace MIS
 
         private void VeresiyeÖdemeButonu_Click(object sender, EventArgs e)
         {
+            panel2.Visible = true;
             // Lokasyon ayarlamaları yapıldı
-            FormVeresiyeMusteriSistemi vm= new FormVeresiyeMusteriSistemi();
-            vm.StartPosition = FormStartPosition.Manual;
+            //FormVeresiyeMusteriSistemi vm= new FormVeresiyeMusteriSistemi();
+            //vm.StartPosition = FormStartPosition.Manual;
             //vm.Left = 1150;
             //vm.Top = 345;
-            vm.Location = new Point((this.Location.X+675),(this.Location.Y+85));
-            vm.Show(); 
+            //vm.Location = new Point((this.Location.X+675),(this.Location.Y+85));
+            //vm.Show(); 
 
             /*var i = Application.OpenForms.OfType<Form>().Select(x => x.Right).ToList().Max();
             FormVeresiyeMusteriSistemi vmd = new FormVeresiyeMusteriSistemi();
@@ -79,11 +83,6 @@ namespace MIS
         }
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
         {
 
         }
@@ -146,6 +145,34 @@ namespace MIS
             {
                 MessageBox.Show("Yanlış ya da Eksik Şifre");
             }
+        }
+
+        private void btnKayitOl_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = true;
+            //FormVeresiyeMusteriSistemi vm = new FormVeresiyeMusteriSistemi();
+            //vm.StartPosition = FormStartPosition.Manual;
+            //vm.Location = new Point((this.Location.X + 0), (this.Location.Y + 0));
+            //vm.Show();
+
+            Musteri mus = new Musteri();
+            Context cntx = new Context();
+
+            mus.musteriAdSoyad = txtMusAdSoy.Text;
+            mus.musteriTel = Convert.ToInt32(txtMusteriTelNo.Text);
+            mus.musteriAlisverisTarihi = txtIslemTarih.Text;
+
+
+
+            cntx.Musteris.Add(mus);
+            cntx.SaveChanges();
+            MessageBox.Show("Müşteri Başarıyla Kaydedildi !");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel2.Visible = false;
         }
     }
 }

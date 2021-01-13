@@ -30,12 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAnaEkran));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCikis = new System.Windows.Forms.Button();
             this.btnPersonelKayit = new System.Windows.Forms.Button();
             this.btnRaporlama = new System.Windows.Forms.Button();
             this.btnStokGiris = new System.Windows.Forms.Button();
             this.btnBorcOdeme = new System.Windows.Forms.Button();
             this.btnSatis = new System.Windows.Forms.Button();
-            this.btnCikis = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,10 +49,29 @@
             this.panel1.Controls.Add(this.btnStokGiris);
             this.panel1.Controls.Add(this.btnBorcOdeme);
             this.panel1.Controls.Add(this.btnSatis);
-            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 726);
+            this.panel1.Size = new System.Drawing.Size(249, 688);
             this.panel1.TabIndex = 1;
+            // 
+            // btnCikis
+            // 
+            this.btnCikis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(26)))), ((int)(((byte)(35)))));
+            this.btnCikis.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(26)))), ((int)(((byte)(35)))));
+            this.btnCikis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnCikis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateGray;
+            this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCikis.ForeColor = System.Drawing.Color.White;
+            this.btnCikis.Location = new System.Drawing.Point(1, 354);
+            this.btnCikis.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(246, 52);
+            this.btnCikis.TabIndex = 8;
+            this.btnCikis.Text = "Çıkış";
+            this.btnCikis.UseVisualStyleBackColor = false;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
             // btnPersonelKayit
             // 
@@ -143,44 +163,32 @@
             this.btnSatis.UseVisualStyleBackColor = false;
             this.btnSatis.Click += new System.EventHandler(this.btnSatis_Click);
             // 
-            // btnCikis
+            // panel2
             // 
-            this.btnCikis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(26)))), ((int)(((byte)(35)))));
-            this.btnCikis.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(26)))), ((int)(((byte)(35)))));
-            this.btnCikis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
-            this.btnCikis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateGray;
-            this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCikis.ForeColor = System.Drawing.Color.White;
-            this.btnCikis.Location = new System.Drawing.Point(1, 354);
-            this.btnCikis.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(246, 52);
-            this.btnCikis.TabIndex = 8;
-            this.btnCikis.Text = "Çıkış";
-            this.btnCikis.UseVisualStyleBackColor = false;
-            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
+            this.panel2.Location = new System.Drawing.Point(244, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(948, 696);
+            this.panel2.TabIndex = 3;
             // 
             // FormAnaEkran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1208, 729);
+            this.ClientSize = new System.Drawing.Size(1192, 688);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(1208, 729);
             this.MinimumSize = new System.Drawing.Size(1208, 729);
             this.Name = "FormAnaEkran";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Market Information System";
-            this.TransparencyKey = System.Drawing.Color.Black;
             this.Load += new System.EventHandler(this.FormAnaEkran_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -196,5 +204,6 @@
         private System.Windows.Forms.Button btnRaporlama;
         private System.Windows.Forms.Button btnPersonelKayit;
         private System.Windows.Forms.Button btnCikis;
+        private System.Windows.Forms.Panel panel2;
     }
 }
