@@ -94,6 +94,18 @@
     <Compile Include="FormGiriş_KayıtEkrani.Designer.cs">
       <DependentUpon>FormGiriş_KayıtEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormKar-Zarar%28Tarih%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKar-Zarar%28Tarih%29.Designer.cs">
+      <DependentUpon>FormKar-Zarar%28Tarih%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMusteriBazliRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMusteriBazliRapor.Designer.cs">
+      <DependentUpon>FormMusteriBazliRapor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPersonelKayitEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +130,18 @@
     <Compile Include="FormSatisEkraniDogrulamaPenceresi.Designer.cs">
       <DependentUpon>FormSatisEkraniDogrulamaPenceresi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSatisRaporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSatisRaporu.Designer.cs">
+      <DependentUpon>FormSatisRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSatisTrendi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSatisTrendi.Designer.cs">
+      <DependentUpon>FormSatisTrendi.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSilDogrulama.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +159,12 @@
     </Compile>
     <Compile Include="FormStokGirisEkrani.Designer.cs">
       <DependentUpon>FormStokGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTotalBorcRaporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTotalBorcRaporu.Designer.cs">
+      <DependentUpon>FormTotalBorcRaporu.cs</DependentUpon>
     </Compile>
     <Compile Include="FormUrunBazliRaporGraf.cs">
       <SubType>Form</SubType>
@@ -169,6 +199,12 @@
     <EmbeddedResource Include="FormGiriş_KayıtEkrani.resx">
       <DependentUpon>FormGiriş_KayıtEkrani.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormKar-Zarar%28Tarih%29.resx">
+      <DependentUpon>FormKar-Zarar%28Tarih%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMusteriBazliRapor.resx">
+      <DependentUpon>FormMusteriBazliRapor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPersonelKayitEkrani.resx">
       <DependentUpon>FormPersonelKayitEkrani.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +217,12 @@
     <EmbeddedResource Include="FormSatisEkraniDogrulamaPenceresi.resx">
       <DependentUpon>FormSatisEkraniDogrulamaPenceresi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSatisRaporu.resx">
+      <DependentUpon>FormSatisRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSatisTrendi.resx">
+      <DependentUpon>FormSatisTrendi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSilDogrulama.resx">
       <DependentUpon>FormSilDogrulama.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormStokGirisEkrani.resx">
       <DependentUpon>FormStokGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTotalBorcRaporu.resx">
+      <DependentUpon>FormTotalBorcRaporu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUrunBazliRaporGraf.resx">
       <DependentUpon>FormUrunBazliRaporGraf.cs</DependentUpon>
