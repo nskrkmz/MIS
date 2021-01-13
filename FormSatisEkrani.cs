@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Data.SqlClient;
 
 namespace MIS
 {
@@ -16,6 +18,7 @@ namespace MIS
         public FormSatisEkrani()
         {
             InitializeComponent();
+            panel1.Visible = false;
         }
 
         private void FormSatisEkrani_Load(object sender, EventArgs e)
@@ -87,12 +90,62 @@ namespace MIS
 
         private void btnSıl_Click(object sender, EventArgs e)
         {
-
+            panel1.Visible = true;
         }
 
         private void OdemeYontemi_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog file = new OpenFileDialog();
+            file.InitialDirectory = "C:";
+            // bu kod ile her zaman C bölümünü açacaktır. Yani açıldığında C bölümünü gösterecek.
+            file.Filter = "Text Dosyası |*.txt";
+            file.FilterIndex = 2;
+
+
+
+            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                string strfileName = openFileDialog1.FileName;
+                StreamReader strreadr = File.OpenText(@strfileName);//@strfileName = file path
+
+
+                string metin;// metin = null
+                while ((metin = strreadr.ReadLine()) != null) //metin=txt 1. satır,2.satır şeklinde değerleniyor(2 kez çalıştı)
+                {
+                    listBox1.Items.Add(metin);
+                }
+                strreadr.Close();
+
+
+
+            }
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void btnOnayla_Click(object sender, EventArgs e)
+        {
+            if ((textBox1.Text == "123456"))
+            {
+                MessageBox.Show("Ürün Silme Başarılı");
+                listBox1.Items.Remove(listBox1.SelectedItem);
+                panel1.Visible = false;
+
+
+
+            }
+            else
+            {
+                MessageBox.Show("Yanlış ya da Eksik Şifre");
+            }
         }
     }
 }
