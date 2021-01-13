@@ -16,5 +16,10 @@ namespace MIS
         {
             InitializeComponent();
         }
+
+        private void FormSilDogrulama_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

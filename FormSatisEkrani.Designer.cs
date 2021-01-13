@@ -33,10 +33,15 @@
             this.btnAlınanUrunler = new System.Windows.Forms.RichTextBox();
             this.OdemeYontemi = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.btnSıl = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnOnayla = new System.Windows.Forms.Button();
+            this.SifreLabel = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // VeresiyeÖdemeButonu
@@ -107,21 +112,11 @@
             this.comboBox1.TabIndex = 8;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             // 
-            // comboBox2
-            // 
-            this.comboBox2.BackColor = System.Drawing.Color.SlateGray;
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(44, 576);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(176, 21);
-            this.comboBox2.TabIndex = 9;
-            // 
             // btnSıl
             // 
             this.btnSıl.BackColor = System.Drawing.Color.SlateGray;
             this.btnSıl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSıl.Location = new System.Drawing.Point(44, 617);
+            this.btnSıl.Location = new System.Drawing.Point(44, 583);
             this.btnSıl.Name = "btnSıl";
             this.btnSıl.Size = new System.Drawing.Size(176, 37);
             this.btnSıl.TabIndex = 10;
@@ -129,14 +124,69 @@
             this.btnSıl.UseVisualStyleBackColor = false;
             this.btnSıl.Click += new System.EventHandler(this.btnSıl_Click);
             // 
-            // dataGridView1
+            // panel1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(44, 45);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(612, 490);
-            this.dataGridView1.TabIndex = 11;
+            this.panel1.Controls.Add(this.btnOnayla);
+            this.panel1.Controls.Add(this.SifreLabel);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Location = new System.Drawing.Point(254, 240);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(188, 109);
+            this.panel1.TabIndex = 12;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnOnayla
+            // 
+            this.btnOnayla.Location = new System.Drawing.Point(50, 51);
+            this.btnOnayla.Name = "btnOnayla";
+            this.btnOnayla.Size = new System.Drawing.Size(84, 39);
+            this.btnOnayla.TabIndex = 5;
+            this.btnOnayla.Text = "Onayla";
+            this.btnOnayla.UseVisualStyleBackColor = true;
+            this.btnOnayla.Click += new System.EventHandler(this.btnOnayla_Click);
+            // 
+            // SifreLabel
+            // 
+            this.SifreLabel.AutoSize = true;
+            this.SifreLabel.Font = new System.Drawing.Font("Arial", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SifreLabel.ForeColor = System.Drawing.Color.White;
+            this.SifreLabel.Location = new System.Drawing.Point(25, 3);
+            this.SifreLabel.Name = "SifreLabel";
+            this.SifreLabel.Size = new System.Drawing.Size(140, 19);
+            this.SifreLabel.TabIndex = 4;
+            this.SifreLabel.Text = "Doğrulama Şifresi";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(22, 25);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(157, 20);
+            this.textBox1.TabIndex = 3;
+            // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(44, 45);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(612, 498);
+            this.listBox1.TabIndex = 13;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(228, 10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(83, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Ürün Ekle";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // FormSatisEkrani
             // 
@@ -144,21 +194,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(957, 725);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSıl);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.OdemeYontemi);
             this.Controls.Add(this.btnAlınanUrunler);
             this.Controls.Add(this.PeşinÖdemeButonu);
             this.Controls.Add(this.VeresiyeÖdemeButonu);
+            this.Controls.Add(this.listBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormSatisEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSatisEkrani";
             this.Load += new System.EventHandler(this.FormSatisEkrani_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,8 +222,13 @@
         private System.Windows.Forms.RichTextBox btnAlınanUrunler;
         private System.Windows.Forms.Label OdemeYontemi;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button btnSıl;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnOnayla;
+        private System.Windows.Forms.Label SifreLabel;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
