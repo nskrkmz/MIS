@@ -171,7 +171,7 @@ namespace MIS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MIS.Properties.Resources.loginImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(624, 831);
+            this.ClientSize = new System.Drawing.Size(499, 665);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.label5);
@@ -188,6 +188,7 @@ namespace MIS
             this.MinimumSize = new System.Drawing.Size(499, 665);
             this.Name = "FormGiriş_KayıtEkrani";
             this.Text = "Kayıt Ol !";
+            this.Load += new System.EventHandler(this.FormGiriş_KayıtEkrani_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

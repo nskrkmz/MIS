@@ -142,12 +142,6 @@
     <Compile Include="FormSatisTrendi.Designer.cs">
       <DependentUpon>FormSatisTrendi.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSilDogrulama.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSilDogrulama.Designer.cs">
-      <DependentUpon>FormSilDogrulama.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormStokGirisDogrulamaPenceresi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,18 +165,6 @@
     </Compile>
     <Compile Include="FormUrunBazliRaporGraf.Designer.cs">
       <DependentUpon>FormUrunBazliRaporGraf.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormVeresiyeMusteriSistemi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormVeresiyeMusteriSistemi.Designer.cs">
-      <DependentUpon>FormVeresiyeMusteriSistemi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormVeresiyeMüşteriKayit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormVeresiyeMüşteriKayit.Designer.cs">
-      <DependentUpon>FormVeresiyeMüşteriKayit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -223,9 +205,6 @@
     <EmbeddedResource Include="FormSatisTrendi.resx">
       <DependentUpon>FormSatisTrendi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSilDogrulama.resx">
-      <DependentUpon>FormSilDogrulama.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormStokGirisDogrulamaPenceresi.resx">
       <DependentUpon>FormStokGirisDogrulamaPenceresi.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,12 +216,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormUrunBazliRaporGraf.resx">
       <DependentUpon>FormUrunBazliRaporGraf.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormVeresiyeMusteriSistemi.resx">
-      <DependentUpon>FormVeresiyeMusteriSistemi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormVeresiyeMüşteriKayit.resx">
-      <DependentUpon>FormVeresiyeMüşteriKayit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

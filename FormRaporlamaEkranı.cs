@@ -21,7 +21,7 @@ namespace MIS
 
         private void FormRaporlamaEkranı_Load(object sender, EventArgs e)
         {
-            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True");
+            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-B9HD7VV;Initial Catalog=MIS_DB;Integrated Security=True");
 
             baglanti.Open();
             SqlCommand komut = new SqlCommand("Select urunAdi, urunYuzdeKar From Uruns", baglanti);
