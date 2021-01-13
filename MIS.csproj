@@ -88,6 +88,12 @@
     <Compile Include="FormGirisEkrani.Designer.cs">
       <DependentUpon>FormGirisEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGiriş_KayıtEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGiriş_KayıtEkrani.Designer.cs">
+      <DependentUpon>FormGiriş_KayıtEkrani.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPersonelKayitEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGirisEkrani.resx">
       <DependentUpon>FormGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGiriş_KayıtEkrani.resx">
+      <DependentUpon>FormGiriş_KayıtEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPersonelKayitEkrani.resx">
       <DependentUpon>FormPersonelKayitEkrani.cs</DependentUpon>

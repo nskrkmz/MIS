@@ -73,7 +73,7 @@ namespace MIS
             clsn.calisanAdSoyad = textBox1.Text;
             clsn.calisanGorev = textBox3.Text;
             clsn.calisanMaas = Convert.ToInt32(textBox4.Text);
-            clsn.calisanSifre = Convert.ToInt32(textBox5.Text);
+            clsn.calisanSifre = textBox5.Text;
 
             cntx.Calisans.Add(clsn);
             cntx.SaveChanges();

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using MIS.Entity;
 
 namespace MIS
 {
@@ -15,10 +17,12 @@ namespace MIS
         public FormGirisEkrani()
         {
             InitializeComponent();
+            
         }
-
-
         
+
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -48,6 +52,14 @@ namespace MIS
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string conString = "Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True";
+            SqlConnection baglanti = new SqlConnection(conString);
+            baglanti.Open();
+            string kayit = "SELECT calisanID from Calisans where calisanSifre=@calisanSifre";
+            SqlCommand komut = new SqlCommand(kayit, baglanti);
+            //komut.Parameters.AddWithValue("@calisanSifre", textBox2.);
+
+ 
 
         }
 
@@ -69,6 +81,20 @@ namespace MIS
         private void pictureBox3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void KullaniciNoGiris_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnKayıtOl_Click(object sender, EventArgs e)
+        {
+            FormGiriş_KayıtEkrani frmkyt = new FormGiriş_KayıtEkrani();
+            frmkyt.StartPosition = FormStartPosition.Manual;
+            frmkyt.Location = new Point((this.Location.X), (this.Location.Y));
+            
+            frmkyt.Show();
         }
     }
 }

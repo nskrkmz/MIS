@@ -37,6 +37,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.linkGithub = new System.Windows.Forms.LinkLabel();
+            this.btnKayıtOl = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKucukResim1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKucukResim2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMISLogo)).BeginInit();
@@ -92,7 +93,8 @@
             this.KullaniciNoGiris.Name = "KullaniciNoGiris";
             this.KullaniciNoGiris.Size = new System.Drawing.Size(209, 25);
             this.KullaniciNoGiris.TabIndex = 3;
-            this.KullaniciNoGiris.Text = "Kullanıcı No";
+            this.KullaniciNoGiris.Text = "Çalışan ID";
+            this.KullaniciNoGiris.TextChanged += new System.EventHandler(this.KullaniciNoGiris_TextChanged);
             // 
             // SifreGiris
             // 
@@ -120,10 +122,10 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial Black", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(176, 356);
+            this.button1.Location = new System.Drawing.Point(124, 365);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 33);
+            this.button1.Size = new System.Drawing.Size(116, 40);
             this.button1.TabIndex = 6;
             this.button1.Text = "Giriş";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -144,6 +146,23 @@
             this.linkGithub.Text = "Kaynak Kodu Görüntüle";
             this.linkGithub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // btnKayıtOl
+            // 
+            this.btnKayıtOl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(200)))), ((int)(((byte)(58)))));
+            this.btnKayıtOl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnKayıtOl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKayıtOl.Font = new System.Drawing.Font("Arial Black", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKayıtOl.Location = new System.Drawing.Point(246, 365);
+            this.btnKayıtOl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnKayıtOl.Name = "btnKayıtOl";
+            this.btnKayıtOl.Size = new System.Drawing.Size(116, 40);
+            this.btnKayıtOl.TabIndex = 8;
+            this.btnKayıtOl.Text = "Kayıt Ol";
+            this.btnKayıtOl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnKayıtOl.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnKayıtOl.UseVisualStyleBackColor = false;
+            this.btnKayıtOl.Click += new System.EventHandler(this.btnKayıtOl_Click);
+            // 
             // FormGirisEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -152,6 +171,7 @@
             this.BackgroundImage = global::MIS.Properties.Resources.loginImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(481, 618);
+            this.Controls.Add(this.btnKayıtOl);
             this.Controls.Add(this.linkGithub);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
@@ -186,7 +206,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.LinkLabel linkGithub;
-        
+        private System.Windows.Forms.Button btnKayıtOl;
     }
 }
 
