@@ -179,3 +179,9 @@ D:\MIS\obj\Debug\MIS.FormMusteriBazliRapor.resources
 D:\MIS\obj\Debug\MIS.FormSatisRaporu.resources
 D:\MIS\obj\Debug\MIS.FormSatisTrendi.resources
 D:\MIS\obj\Debug\MIS.FormTotalBorcRaporu.resources
+C:\MIS\obj\Debug\MIS.FormGiriş_KayıtEkrani.resources
+C:\MIS\obj\Debug\MIS.FormKar_Zarar_Tarih_.resources
+C:\MIS\obj\Debug\MIS.FormMusteriBazliRapor.resources
+C:\MIS\obj\Debug\MIS.FormSatisRaporu.resources
+C:\MIS\obj\Debug\MIS.FormSatisTrendi.resources
+C:\MIS\obj\Debug\MIS.FormTotalBorcRaporu.resources

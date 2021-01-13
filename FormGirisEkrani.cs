@@ -14,6 +14,9 @@ namespace MIS
 {
     public partial class FormGirisEkrani : Form
     {
+        SqlConnection con;
+        SqlCommand cmd;
+        SqlDataReader dr;
         public FormGirisEkrani()
         {
             InitializeComponent();
@@ -52,15 +55,26 @@ namespace MIS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string conString = "Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True";
-            SqlConnection baglanti = new SqlConnection(conString);
+            string kullaniciID = KullaniciNoGiris.Text;
+            string sifre = sifreGiris.Text;
+            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True");
+            SqlCommand komut = new SqlCommand();
             baglanti.Open();
-            string kayit = "SELECT calisanID from Calisans where calisanSifre=@calisanSifre";
-            SqlCommand komut = new SqlCommand(kayit, baglanti);
-            //komut.Parameters.AddWithValue("@calisanSifre", textBox2.);
-
- 
-
+            komut.Connection = baglanti;
+            komut.CommandText = "SELECT * FROM Calisans where calisanID='" + KullaniciNoGiris.Text + "' AND calisanSifre='" + sifreGiris.Text + "'";
+            dr = komut.ExecuteReader();
+            if (dr.Read())
+            {
+                FormAnaEkran ae = new FormAnaEkran();
+                ae.StartPosition = FormStartPosition.CenterScreen;
+                ae.ShowDialog();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı no veya şifrenizi kontrol ediniz!!");
+            }
+            baglanti.Close();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -73,10 +87,6 @@ namespace MIS
             
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
@@ -95,6 +105,11 @@ namespace MIS
             frmkyt.Location = new Point((this.Location.X), (this.Location.Y));
             
             frmkyt.Show();
+        }
+
+        private void sifreGiris_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
