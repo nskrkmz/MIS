@@ -31,44 +31,45 @@ namespace MIS
             //frmMenu.Show();
         }
 
+        private void FormGetir(Form frm)
+        {
+            frm.MdiParent = this;
+            panel2.Controls.Add(frm);
+            frm.Show();
+        }
         private void btnSatis_Click(object sender, EventArgs e)
         {
+            panel2.Controls.Clear();
             FormSatisEkrani se = new FormSatisEkrani();
-            se.StartPosition = FormStartPosition.Manual;
-            se.Location = new Point((this.Location.X + 250), (this.Location.Y + 2));
-            se.Show();
+            FormGetir(se);
         }
 
         private void btnPersonelKayit_Click(object sender, EventArgs e)
         {
+            panel2.Controls.Clear();
             FormPersonelKayitEkrani pke = new FormPersonelKayitEkrani();
-            pke.StartPosition = FormStartPosition.Manual;
-            pke.Location = new Point((this.Location.X + 250), (this.Location.Y + 2));
-            pke.Show();
+            FormGetir(pke);
         }
 
         private void btnRaporlama_Click(object sender, EventArgs e)
         {
+            panel2.Controls.Clear();
             FormRaporlamaEkranı re = new FormRaporlamaEkranı();
-            re.StartPosition = FormStartPosition.Manual;
-            re.Location = new Point((this.Location.X + 250), (this.Location.Y + 2));
-            re.Show();
+            FormGetir(re);
         }
 
         private void btnStokGiris_Click(object sender, EventArgs e)
         {
+            panel2.Controls.Clear();
             FormStokGirisEkrani sge = new FormStokGirisEkrani();
-            sge.StartPosition = FormStartPosition.Manual;
-            sge.Location = new Point((this.Location.X + 250), (this.Location.Y + 2));
-            sge.Show();
+            FormGetir(sge);
         }
 
         private void btnBorcOdeme_Click(object sender, EventArgs e)
         {
+            panel2.Controls.Clear();
             FormBorcOdemeEkranı boe = new FormBorcOdemeEkranı();
-            boe.StartPosition = FormStartPosition.Manual;
-            boe.Location = new Point((this.Location.X + 250), (this.Location.Y + 2));
-            boe.Show();
+            FormGetir(boe);
         }
 
         private void btnCikis_Click(object sender, EventArgs e)

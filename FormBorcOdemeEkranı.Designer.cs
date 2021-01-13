@@ -48,7 +48,7 @@ namespace MIS
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 29);
+            this.label1.Size = new System.Drawing.Size(301, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Veresiye Müşteri Listesi";
             // 
@@ -83,9 +83,9 @@ namespace MIS
             this.txtBTotalBorc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtBTotalBorc.Location = new System.Drawing.Point(703, 337);
             this.txtBTotalBorc.Name = "txtBTotalBorc";
-            this.txtBTotalBorc.Size = new System.Drawing.Size(175, 26);
+            this.txtBTotalBorc.Size = new System.Drawing.Size(175, 27);
             this.txtBTotalBorc.TabIndex = 5;
-            this.txtBTotalBorc.Text = "156456";
+            this.txtBTotalBorc.Text = "0";
             // 
             // label2
             // 
@@ -94,7 +94,7 @@ namespace MIS
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(699, 314);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 20);
+            this.label2.Size = new System.Drawing.Size(127, 22);
             this.label2.TabIndex = 6;
             this.label2.Text = "TOTAL BORÇ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -106,7 +106,7 @@ namespace MIS
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(699, 397);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(236, 20);
+            this.label3.Size = new System.Drawing.Size(262, 22);
             this.label3.TabIndex = 6;
             this.label3.Text = "ÖDEMEK İSTEDİĞİNİZ TUTAR";
             this.label3.Click += new System.EventHandler(this.label2_Click);
@@ -117,9 +117,9 @@ namespace MIS
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox1.Location = new System.Drawing.Point(703, 420);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 26);
+            this.textBox1.Size = new System.Drawing.Size(175, 27);
             this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "10";
+            this.textBox1.Text = "0";
             // 
             // button1
             // 
@@ -138,6 +138,7 @@ namespace MIS
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(17, 58);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 45;
             this.dataGridView1.Size = new System.Drawing.Size(664, 599);
             this.dataGridView1.TabIndex = 8;
             // 
