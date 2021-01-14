@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MIS_DB">
+  <DataContextMoniker Name="/MIS_DBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="00358866-aefc-4551-bcad-6496a8290851" absoluteBounds="0.75, 0.75, 2, 1.7505064557989436">
+      <DataClassMoniker Name="/MIS_DBDataContext/Musteris" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28f0bef9-d7d0-4808-89c5-bc5357887287" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.1905064557989438" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4c8dac03-ef23-4963-9dfd-2c393212f7ee" absoluteBounds="3.75, 0.75, 2, 1.9396709105372429">
+      <DataClassMoniker Name="/MIS_DBDataContext/MusteriBorcs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="08732587-91b1-4cf6-846b-f6e240750d50" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.3796709105372429" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,5 @@
+Create proc MusterisVeMusteriBorcs
+as
+begin
+select u.musteriAdSoyad,u.musteriAlisverisTarihi,kat.musteriGuncelBorc,kat.odenenMiktar,kat.musteriBorcDurum from Musteris u inner join MusteriBorcs  kat on u.musteriFisNo = kat.musteriBorcFisNo 
+end

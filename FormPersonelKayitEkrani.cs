@@ -87,7 +87,7 @@ namespace MIS
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-
+            textBox5.PasswordChar = '*';
         }
     }
 }

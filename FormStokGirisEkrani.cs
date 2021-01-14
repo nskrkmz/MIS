@@ -25,7 +25,7 @@ namespace MIS
             panel1.Visible = false;
             
         }
-        static string conString = "Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True";
+        static string conString = "Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True";
         SqlConnection baglanti = new SqlConnection(conString);
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
@@ -235,7 +235,7 @@ namespace MIS
             cbTedarikciBorcSorgula.Items.Clear();
             SqlConnection baglanti = new SqlConnection();
             //SqlConnection baglanti2 = new SqlConnection();
-            baglanti.ConnectionString = (@"Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True");
+            baglanti.ConnectionString = (@"Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True");
             //baglanti2.ConnectionString = (@"Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True");
             cbTedarikciBorcSorgula.Items.Clear();
             baglanti.Open();
@@ -317,7 +317,7 @@ namespace MIS
             baglanti.Close();
             //
             SqlConnection baglanti3 = new SqlConnection();
-            baglanti3.ConnectionString = (@"Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True");
+            baglanti3.ConnectionString = (@"Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True");
             baglanti3.Open();
             string kayit2 = "SELECT toplamTutar from Irsaliyes where irsaliyeTedarikciID=@irsaliyeTedarikciID";
             SqlCommand komut3 = new SqlCommand(kayit2,baglanti3);
@@ -367,7 +367,7 @@ namespace MIS
 
         private void stokonay_TextChanged(object sender, EventArgs e)
         {
-
+            stokonay.PasswordChar = '*';
         }
 
         private void button1_Click(object sender, EventArgs e)

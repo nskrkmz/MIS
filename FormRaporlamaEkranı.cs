@@ -14,14 +14,26 @@ namespace MIS
 {
     public partial class FormRaporlamaEkranı : Form
     {
+        SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True");
+        SqlDataAdapter da;
+        DataSet ds;
+        MIS_DBDataContext dc = new MIS_DBDataContext();
         public FormRaporlamaEkranı()
         {
             InitializeComponent();
+            dataGridView1.DataSource = dc.MusterisVeMusteriBorcs();
         }
 
         private void FormRaporlamaEkranı_Load(object sender, EventArgs e)
         {
-            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True");
+            // TODO: Bu kod satırı 'mIS_DBDataSet.Musteris' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+           
+
+        }
+
+        public void urunBazliKarZarar()
+        {
+            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True");
 
             baglanti.Open();
             SqlCommand komut = new SqlCommand("Select urunAdi, urunYuzdeKar From Uruns", baglanti);
@@ -31,64 +43,85 @@ namespace MIS
                 chart1.Series["Urunler"].Points.AddXY(oku[0].ToString(), oku[1]);
             }
             baglanti.Close();
-
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            /*FormMusteriBazliRapor ubrg = new FormMusteriBazliRapor();
-            ubrg.StartPosition = FormStartPosition.Manual;
-            ubrg.Location = new Point((this.Location.X + 0), (this.Location.Y + 50));
-            ubrg.Show();*/
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            /*FormSatisRaporu ubrg = new FormSatisRaporu();
-            ubrg.StartPosition = FormStartPosition.Manual;
-            ubrg.Location = new Point((this.Location.X + 0), (this.Location.Y + 50));
-            ubrg.Show();*/
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            /*FormKar_Zarar_Tarih_ ubrg = new FormKar_Zarar_Tarih_();
-            ubrg.StartPosition = FormStartPosition.Manual;
-            ubrg.Location = new Point((this.Location.X + 0), (this.Location.Y + 50));
-            ubrg.Show();*/
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            /*FormUrunBazliRaporGraf ubrg = new FormUrunBazliRaporGraf();
-            ubrg.StartPosition = FormStartPosition.Manual;
-            ubrg.Location = new Point((this.Location.X + 0 ), (this.Location.Y + 50));
-            ubrg.Show();*/
-
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            /*FormTotalBorcRaporu ubrg = new FormTotalBorcRaporu();
-            ubrg.StartPosition = FormStartPosition.Manual;
-            ubrg.Location = new Point((this.Location.X + 0), (this.Location.Y + 50));
-            ubrg.Show();*/
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            /*FormSatisTrendi ubrg = new FormSatisTrendi();
-            ubrg.StartPosition = FormStartPosition.Manual;
-            ubrg.Location = new Point((this.Location.X + 0), (this.Location.Y + 50));
-            ubrg.Show();*/
-        }
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        public void totalBorc()
         {
 
         }
 
-        private void chart1_Click_1(object sender, EventArgs e)
+        private void tabControl1_SelectIndexChanged(object sender, EventArgs e)
+        {
+            if(tabControl1.SelectedTab == tabPage1)
+            {
+                urunBazliKarZarar();
+            }
+            else if(tabControl1.SelectedTab == tabPage2 )
+            {
+                    
+            }
+        }
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlKarZarar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_3(object sender, DataGridViewCellEventArgs e)
         {
 
         }

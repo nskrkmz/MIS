@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MIS_DB" Class="MIS_DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=MIS_DB;Integrated Security=True" SettingsObjectName="MIS.Properties.Settings" SettingsPropertyName="MIS_DBConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Musteris" Member="Musteris">
+    <Type Name="Musteris">
+      <Column Name="musteriID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="musteriAlisverisTarihi" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="musteriFisNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="musteriAdSoyad" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="musteriTel" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MusteriBorcs" Member="MusteriBorcs">
+    <Type Name="MusteriBorcs">
+      <Column Name="musteriBorcMusteriID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="musteriBorcFisNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="musteriBorcCalisanID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="odenenMiktar" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="musteriGuncelBorc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="musteriBorcDurum" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.MusterisVeMusteriBorcs" Method="MusterisVeMusteriBorcs">
+    <ElementType Name="MusterisVeMusteriBorcsResult">
+      <Column Name="musteriAdSoyad" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="musteriAlisverisTarihi" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="musteriGuncelBorc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="odenenMiktar" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="musteriBorcDurum" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>
