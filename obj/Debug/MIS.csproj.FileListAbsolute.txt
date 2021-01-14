@@ -123,11 +123,8 @@ C:\AnaProje\MIS\obj\Debug\MIS.FormPersonelKayitEkrani.resources
 C:\AnaProje\MIS\obj\Debug\MIS.FormRaporlamaEkranı.resources
 C:\AnaProje\MIS\obj\Debug\MIS.FormSatisEkrani.resources
 C:\AnaProje\MIS\obj\Debug\MIS.FormSatisEkraniDogrulamaPenceresi.resources
-C:\AnaProje\MIS\obj\Debug\MIS.FormSilDogrulama.resources
 C:\AnaProje\MIS\obj\Debug\MIS.FormStokGirisDogrulamaPenceresi.resources
 C:\AnaProje\MIS\obj\Debug\MIS.FormStokGirisEkrani.resources
-C:\AnaProje\MIS\obj\Debug\MIS.FormVeresiyeMusteriSistemi.resources
-C:\AnaProje\MIS\obj\Debug\MIS.FormVeresiyeMüşteriKayit.resources
 C:\AnaProje\MIS\obj\Debug\MIS.Properties.Resources.resources
 C:\AnaProje\MIS\obj\Debug\MIS.csproj.GenerateResource.cache
 C:\AnaProje\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
