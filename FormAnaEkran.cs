@@ -26,9 +26,7 @@ namespace MIS
             //Context cntxt =new Context();//Context sınıfından nesne yaratıldı
             //cntxt.Database.Create();//Veritabanı oluşturuldu
 
-         //   FormMenu frmMenu = new FormMenu();
-          //  frmMenu.MdiParent = this;
-            //frmMenu.Show();
+         
         }
 
         private void FormGetir(Form frm)

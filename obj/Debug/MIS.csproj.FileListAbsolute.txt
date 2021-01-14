@@ -155,12 +155,9 @@ D:\MIS\obj\Debug\MIS.FormPersonelKayitEkrani.resources
 D:\MIS\obj\Debug\MIS.FormRaporlamaEkranı.resources
 D:\MIS\obj\Debug\MIS.FormSatisEkrani.resources
 D:\MIS\obj\Debug\MIS.FormSatisEkraniDogrulamaPenceresi.resources
-D:\MIS\obj\Debug\MIS.FormSilDogrulama.resources
 D:\MIS\obj\Debug\MIS.FormStokGirisDogrulamaPenceresi.resources
 D:\MIS\obj\Debug\MIS.FormStokGirisEkrani.resources
 D:\MIS\obj\Debug\MIS.FormUrunBazliRaporGraf.resources
-D:\MIS\obj\Debug\MIS.FormVeresiyeMusteriSistemi.resources
-D:\MIS\obj\Debug\MIS.FormVeresiyeMüşteriKayit.resources
 D:\MIS\obj\Debug\MIS.Properties.Resources.resources
 D:\MIS\obj\Debug\MIS.csproj.GenerateResource.cache
 D:\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
