@@ -22,9 +22,10 @@ namespace MIS
 
             label5.Visible = false;
             label5.Hide();
+            panel1.Visible = false;
             
         }
-        static string conString = "Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True";
+        static string conString = "Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True";
         SqlConnection baglanti = new SqlConnection(conString);
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
@@ -85,11 +86,22 @@ namespace MIS
 
         private void btnStogaIsle_Click(object sender, EventArgs e)
         {
-            /*OpenFileDialog file = new OpenFileDialog();
-            file.InitialDirectory = "C:";
-            // bu kod ile her zaman C bölümünü açacaktır. Yani açıldığında C bölümünü gösterecek.
-            file.Filter = "Text Dosyası |*.txt";
-            file.FilterIndex = 2;*/
+           if (panel1.Visible==true)
+            {
+
+            }
+           else
+           {
+                panel1.Visible = true;
+                
+           }
+
+
+        }
+
+        public void stokIsle()
+        {
+            panel1.Visible = true;
 
 
 
@@ -101,96 +113,129 @@ namespace MIS
 
                 string metin;// metin = null
                 MessageBox.Show("Yükleniyor !");
+                Random rnd = new Random();
+                int random = rnd.Next(1000);//irsaliye no için
+
                 while ((metin = strreadr.ReadLine()) != null) //metin=txt 1. satır,2.satır şeklinde değerleniyor(2 kez çalıştı)
                 {
                     //string phrase = "The quick brown fox jumps over the lazy dog.";
                     string[] words = metin.Split(' ');
                     Urun urn = new Urun();
+                    Irsaliye irs = new Irsaliye();
+                    TedarikciBorc tedborc = new TedarikciBorc();
+                    Depo dpo = new Depo();
                     Context contxtt = new Context();
                     int islemOkuma = 0;
+                    int total = 0;
                     foreach (var word in words)
                     {
-                        
+
                         if (islemOkuma == 0) //ıd oku
                         {
                             urn.urunID = Convert.ToInt32(word);
-                            
+                            irs.irsaliyeUrunID = Convert.ToInt32(word);
+                            irs.irsaliyeNo = random;
+                            irs.irsaliyeTedarikciID = idTed.Text;
+                            dpo.depoUrunID = Convert.ToInt32(word);
+                            dpo.depoCalisanID = Convert.ToInt32(ıd.Text);
+                            dpo.depoTedarikciID = Convert.ToInt32(idTed.Text);
+
                         }
                         if (islemOkuma == 1) // ad oku
                         {
                             urn.urunAdi = word;
-                            
+
                         }
                         if (islemOkuma == 2)// depo tarih oku
                         {
                             urn.urunDepoTarih = word;
-                            
+                            irs.irsaliyeTarih = word;
+
                         }
                         if (islemOkuma == 3)//alış fiyat oku
                         {
                             urn.urunAlisFiyat = Convert.ToInt32(word);
-                            
+                            irs.birimFiyat = Convert.ToInt32(word);
+                            irs.miktar = 458;
+                            dpo.urunAdet = 458;
+                            irs.toplamTutar = Convert.ToInt32(word) * 458;
+                            total = total + (458 * (Convert.ToInt32(word)));
+
                         }
                         if (islemOkuma == 4)//satış fiyat oku
                         {
                             urn.urunSatisFiyat = Convert.ToInt32(word);
-                            
+
                         }
                         if (islemOkuma == 5)// gr oku
                         {
                             urn.urunGr = Convert.ToInt32(word);
-                            
+
                         }
                         if (islemOkuma == 6)//stt oku
                         {
                             urn.urunSTT = word;
-                            
+
                         }
                         if (islemOkuma == 7)//irsaliye no oku
                         {
                             urn.urunIrsaliyeNo = Convert.ToInt32(word);
-                            
+
                         }
                         if (islemOkuma == 8)//kategori oku
                         {
                             urn.urunKategori = word;
-                            
+
                         }
                         if (islemOkuma == 9)//%kar oku
                         {
                             urn.urunYuzdeKar = Convert.ToInt32(word);
 
                             contxtt.Uruns.Add(urn); //son ekleme yapıldığı için değişiklikler db e eklendi
+                            contxtt.Irsaliyes.Add(irs);
+                            contxtt.Depos.Add(dpo);
                             contxtt.SaveChanges();
-                            
+
                         }
                         islemOkuma = islemOkuma + 1;
-                        
+
 
                     }
+
+
+                    tedborc.tedarikciBorcIrsaliyeTutar = total;
+                    tedborc.tedarikciBorcdurum = false;
+                    tedborc.tedarikciBorcTedarikciID = idTed.Text;
+                    tedborc.tedarikciBorcirsaliyeNo = random;
+
+
                     if (islemOkuma == 10)
                     {
                         islemOkuma = 0;
                     }
-                    
+
                 }
                 strreadr.Close();
-                
+
                 MessageBox.Show("Ürünler veri tabanına başarıyla eklendi !");
+                panel1.Visible = false;
 
 
             }
-
-
         }
 
         private void FormStokGirisEkrani_Load(object sender, EventArgs e)
+        {
+
+            guncelleme();
+        }
+        public void guncelleme()
         {
             kayitGetir();
             cbTedarikciBorcSorgula.Items.Clear();
             SqlConnection baglanti = new SqlConnection();
             //SqlConnection baglanti2 = new SqlConnection();
-            baglanti.ConnectionString = (@"Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True");
+            baglanti.ConnectionString = (@"Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True");
             //baglanti2.ConnectionString = (@"Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True");
             cbTedarikciBorcSorgula.Items.Clear();
             baglanti.Open();
@@ -223,7 +268,7 @@ namespace MIS
             foreach (DataRow dr in dt.Rows)
             {
                 cbTedarikciBorcSorgula.Items.Add(dr["irsaliyeTedarikciID"].ToString());
-                
+
 
             }
             string[] items = cbTedarikciBorcSorgula.Items.OfType<string>().Distinct().ToArray();
@@ -232,9 +277,8 @@ namespace MIS
             {
                 cbTedarikciBorcSorgula.Items.Add(items[i]);
             }
-                
-            baglanti.Close();
 
+            baglanti.Close();
         }
         private void kayitGetir()
         {
@@ -273,7 +317,7 @@ namespace MIS
             baglanti.Close();
             //
             SqlConnection baglanti3 = new SqlConnection();
-            baglanti3.ConnectionString = (@"Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True");
+            baglanti3.ConnectionString = (@"Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True");
             baglanti3.Open();
             string kayit2 = "SELECT toplamTutar from Irsaliyes where irsaliyeTedarikciID=@irsaliyeTedarikciID";
             SqlCommand komut3 = new SqlCommand(kayit2,baglanti3);
@@ -299,6 +343,56 @@ namespace MIS
         private void txtTedarikciTotalBorc_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+        }
+
+        private void ıd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void idTed_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void stokonay_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (stokonay.Text=="123456")
+            {
+                
+                stokIsle();
+
+            }
+            else
+            {
+                MessageBox.Show("Giriş Başarısız");
+                idTed.Clear();
+                ıd.Clear();
+                stokonay.Clear();
+                
+
+
+            }
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            guncelleme();
         }
     }
 }

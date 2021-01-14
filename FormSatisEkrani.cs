@@ -24,11 +24,17 @@ namespace MIS
             panel2.Visible = false;
         }
 
-        static string conString = "Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True";
+        static string conString = "Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True";
         SqlConnection baglanti = new SqlConnection(conString);
 
         private void FormSatisEkrani_Load(object sender, EventArgs e)
         {
+            yukle();
+        }
+        public void yukle()
+        {
+            VeresiyeListesiCb.Items.Clear();
+            comboBox2.Items.Clear();
             // Ödeme yöntemi checkbox aracıyla seçiliyor
             // Kod ile ekleme yapılmasının sebebi daha sonra veri tabanında daha rahat kullanılmasını sağlamak için yoksa normal ekleme de yapılabilir.
             string[] odemeYontemi = { "NAKİT", "KART" };
@@ -37,35 +43,20 @@ namespace MIS
             baglanti.Open();
             SqlCommand komut = new SqlCommand("select *from Musteris", baglanti);
             SqlDataReader read = komut.ExecuteReader();
+            int q = 0;
             while (read.Read())
             {
-                VeresiyeListesiCb.Items.Add(read["musteriAdSoyad"]);
+                VeresiyeListesiCb.Items.Add(read["musteriID"]);
+                comboBox2.Items.Add(read["musteriAdSoyad"]);
+
             }
+
             baglanti.Close();
         }
-
         private void VeresiyeÖdemeButonu_Click(object sender, EventArgs e)
         {
             panel2.Visible = true;
-            // Lokasyon ayarlamaları yapıldı
-            //FormVeresiyeMusteriSistemi vm= new FormVeresiyeMusteriSistemi();
-            //vm.StartPosition = FormStartPosition.Manual;
-            //vm.Left = 1150;
-            //vm.Top = 345;
-            //vm.Location = new Point((this.Location.X+675),(this.Location.Y+85));
-            //vm.Show(); 
-
-            /*var i = Application.OpenForms.OfType<Form>().Select(x => x.Right).ToList().Max();
-            FormVeresiyeMusteriSistemi vmd = new FormVeresiyeMusteriSistemi();
-            vmd.StartPosition = FormStartPosition.Manual;
-            vmd.Location = new Point(i, this.Location.Y);
-            vmd.Location = new Point(i, this.Location.X);
-            vmd.Show();*/
-
-            /*FormVeresiyeMusteriSistemi vm = new FormVeresiyeMusteriSistemi();
-            vm.Location = new Point(this.Location.Y);
-            vm.Location = new Point(this.Location.X);
-            vm.Show();*/
+            
 
         }
 
@@ -181,6 +172,10 @@ namespace MIS
             cntx.Musteris.Add(mus);
             cntx.SaveChanges();
             MessageBox.Show("Müşteri Başarıyla Kaydedildi !");
+            panel3.Visible = false;
+            panel2.Visible = true;
+            
+            yukle();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -277,15 +272,139 @@ namespace MIS
                 
                 cntxt.Islems.Add(islm);
                 cntxt.SaveChanges();
+                MessageBox.Show("Ödeme Gerçekleştirildi");
 
-                /*for (int k = 0; k < 4; k++)
-                {
 
-                }*/
+                
             }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAlisverisTamamla_Click(object sender, EventArgs e)
+        {
+            string[] veriler1 = new string[listBox1.Items.Count];
+            string[] kelimeler;
+            string[] idler = new string[listBox1.Items.Count];
+            string[] fiyatlar_str = new string[listBox1.Items.Count];
+            for (int i = 0; i < listBox1.Items.Count; i++)
+            {
+
+                veriler1[i] = listBox1.Items[i].ToString();
+                kelimeler = veriler1[i].Split(' ');
+                string v = kelimeler[0];
+                string v2 = kelimeler[2];
+                idler[i] = v.ToString();
+                fiyatlar_str[i] = v2.ToString();
+
+            }
+
+            int[] fiyat_int = new int[listBox1.Items.Count];
+            int x = 0;
+            int toplam2 = 0;
+            int tut = 0;
+            foreach (string a in fiyatlar_str)
+            {
+                tut = Convert.ToInt32(a);
+                toplam2 += tut;
+            }
+            int toplam = fiyat_int.Sum();
+            textBox2.Text = Convert.ToString(toplam2);
+
+            string[] datalar;
+            int count = 0;
+            for (int j = 0; j < veriler1.Length; j++)
+            {
+                datalar = veriler1[j].Split();
+                Context cntxt = new Context();
+                Islem islm = new Islem();
+                MusteriBorc mstBrc = new MusteriBorc();
+
+                if (count == 0)
+                {
+                    Fis fis = new Fis();
+                    fis.islemTarihi = datalar[1];
+                    fis.islemTutar = Convert.ToInt32(textBox2.Text);
+                    if (comboBox1.SelectedItem == "NAKİT")
+                    {
+                        fis.odemeTipi = 1; // nakit ödeme
+                    }
+                    else if(comboBox1.SelectedItem == "KART")
+                    {
+                        fis.odemeTipi = 0; // kartla ödeme
+                    }
+                    else {
+                        fis.odemeTipi = 2; // veresiye işlem default değer
+                    }
+                    fis.fisMusteriID = Convert.ToInt32(VeresiyeListesiCb.SelectedItem); // peşin ödeme default değeri
+                    
+                    mstBrc.musteriBorcDurum = false;
+                    mstBrc.musteriBorcFisNo = count + 1;
+                    mstBrc.musteriBorcMusteriID = Convert.ToInt32(VeresiyeListesiCb.SelectedItem);
+                    mstBrc.musteriGuncelBorc = Convert.ToInt32(textBox2.Text);
+                    mstBrc.odenenMiktar = 0;
+
+                    cntxt.Fiss.Add(fis);
+                    cntxt.MusteriBorcs.Add(mstBrc);
+                    count = 1;
+
+
+                }
+
+                Random rastgele = new Random();
+                //int fisNumara = rastgele.Next(1000);
+                int fisNumara = 0;
+                for (int i = 0; i < 10; i++)
+                {
+                    fisNumara = (rastgele.Next());
+                }
+
+
+                islm.islemFisNo = fisNumara;
+                islm.islemUrunID = Convert.ToInt32(datalar[3]);
+                islm.islemTarihi = datalar[1];
+
+
+                cntxt.Islems.Add(islm);
+                cntxt.SaveChanges();
+                
+
+
+
+            }
+            MessageBox.Show("Veresiye Satış Gerçekleştirildi");
+
+        }
+
+        private void VeresiyeListesiCb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            VeresiyeListesiCb.SelectedIndex= comboBox2.SelectedIndex ;
+        }
+
+        private void txtMusAdSoy_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            VeresiyeListesiCb.SelectedIndex =comboBox2.SelectedIndex ;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
