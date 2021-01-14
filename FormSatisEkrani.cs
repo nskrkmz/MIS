@@ -24,7 +24,7 @@ namespace MIS
             panel2.Visible = false;
         }
 
-        static string conString = "Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True";
+        static string conString = "Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True";
         SqlConnection baglanti = new SqlConnection(conString);
 
         private void FormSatisEkrani_Load(object sender, EventArgs e)
@@ -197,7 +197,7 @@ namespace MIS
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            textBox1.PasswordChar = '*';
         }
 
         private void PeşinÖdemeButonu_Click(object sender, EventArgs e)
