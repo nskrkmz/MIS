@@ -24,7 +24,7 @@ namespace MIS
             panel2.Visible = false;
         }
 
-        static string conString = "Data Source=DESKTOP-B9HD7VV;Initial Catalog=MIS_DB;Integrated Security=True";
+        static string conString = "Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True";
         SqlConnection baglanti = new SqlConnection(conString);
 
         private void FormSatisEkrani_Load(object sender, EventArgs e)
@@ -201,6 +201,91 @@ namespace MIS
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PeşinÖdemeButonu_Click(object sender, EventArgs e)
+        {
+            string[] veriler1 = new string[listBox1.Items.Count];
+            string[] kelimeler;
+            string[] idler = new string[listBox1.Items.Count];
+            string[] fiyatlar_str = new string[listBox1.Items.Count];
+            for (int i = 0; i < listBox1.Items.Count; i++)
+            {
+
+                veriler1[i] = listBox1.Items[i].ToString();
+                kelimeler = veriler1[i].Split(' ');
+                string v = kelimeler[0];
+                string v2 = kelimeler[2];
+                idler[i] = v.ToString();
+                fiyatlar_str[i] = v2.ToString();
+
+            }
+
+            int[] fiyat_int = new int[listBox1.Items.Count];
+            int x = 0;
+            int toplam2 = 0;
+            int tut = 0;
+            foreach (string a in fiyatlar_str)
+            {
+                tut = Convert.ToInt32(a);
+                toplam2 += tut;
+            }
+            int toplam = fiyat_int.Sum();
+            textBox2.Text = Convert.ToString(toplam2);
+
+            string[] datalar;
+            int count = 0;
+            for (int j = 0; j < veriler1.Length; j++)
+            {
+                datalar = veriler1[j].Split();
+                Context cntxt = new Context();
+                Islem islm = new Islem();
+                
+                if (count == 0)
+                {
+                    Fis fis = new Fis();
+                    fis.islemTarihi = datalar[1];
+                    fis.islemTutar = Convert.ToInt32(textBox2.Text);
+                    if (comboBox1.SelectedItem == "NAKİT")
+                    {
+                        fis.odemeTipi = 1; // nakit ödeme
+                    }
+                    else
+                    {
+                        fis.odemeTipi = 0; // kartla ödeme
+                    }
+                    fis.fisMusteriID = 0; // peşin ödeme default değeri
+                    cntxt.Fiss.Add(fis);
+                    count = 1;
+                }
+                
+                Random rastgele = new Random();
+                //int fisNumara = rastgele.Next(1000);
+                int fisNumara = 0;
+                for(int i = 0; i < 10; i++)
+                {
+                    fisNumara = (rastgele.Next()); 
+                }
+                
+
+                islm.islemFisNo = fisNumara;
+                islm.islemUrunID = Convert.ToInt32(datalar[3]);
+                islm.islemTarihi = datalar[1];
+                
+                
+                cntxt.Islems.Add(islm);
+                cntxt.SaveChanges();
+
+                /*for (int k = 0; k < 4; k++)
+                {
+
+                }*/
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
