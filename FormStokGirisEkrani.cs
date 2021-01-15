@@ -25,7 +25,7 @@ namespace MIS
             panel1.Visible = false;
             
         }
-        static string conString = "Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True";
+        static string conString = "Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True";
         SqlConnection baglanti = new SqlConnection(conString);
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
@@ -122,8 +122,9 @@ namespace MIS
                     string[] words = metin.Split(' ');
                     Urun urn = new Urun();
                     Irsaliye irs = new Irsaliye();
-                    TedarikciBorc tedborc = new TedarikciBorc();
+                   
                     Depo dpo = new Depo();
+                    
                     Context contxtt = new Context();
                     int islemOkuma = 0;
                     int total = 0;
@@ -202,13 +203,8 @@ namespace MIS
 
                     }
 
-
-                    tedborc.tedarikciBorcIrsaliyeTutar = total;
-                    tedborc.tedarikciBorcdurum = false;
-                    tedborc.tedarikciBorcTedarikciID = idTed.Text;
-                    tedborc.tedarikciBorcirsaliyeNo = random;
-
-
+                    
+                    
                     if (islemOkuma == 10)
                     {
                         islemOkuma = 0;
@@ -235,7 +231,7 @@ namespace MIS
             cbTedarikciBorcSorgula.Items.Clear();
             SqlConnection baglanti = new SqlConnection();
             //SqlConnection baglanti2 = new SqlConnection();
-            baglanti.ConnectionString = (@"Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True");
+            baglanti.ConnectionString = (@"Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True");
             //baglanti2.ConnectionString = (@"Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True");
             cbTedarikciBorcSorgula.Items.Clear();
             baglanti.Open();
@@ -249,21 +245,7 @@ namespace MIS
             da.Fill(dt);
             int total = 0;
 
-            /*
-            SqlCommand komut2 = new SqlCommand();
-            komut2 = baglanti2.CreateCommand();
-            komut2.CommandType = CommandType.Text;
-            komut2.CommandText = "SELECT toplamTutar FROM Irsaliyes";
-            //komut2.ExecuteNonQuery();
-            DataTable dt2 = new DataTable();
-            SqlDataAdapter da2 = new SqlDataAdapter(komut2);
-            da2.Fill(dt2);
-            foreach(DataRow dre in dt2.Rows)
-            {
-                total = total + (Convert.ToInt32(dre["toplamTutar"].ToString()));
-                txtTedarikciTotalBorc.Text = Convert.ToString(total);
-            }
-            */
+            
 
             foreach (DataRow dr in dt.Rows)
             {
@@ -300,6 +282,7 @@ namespace MIS
         {
             
         }
+        
 
         private void cbTedarikciBorcSorgula_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -317,7 +300,7 @@ namespace MIS
             baglanti.Close();
             //
             SqlConnection baglanti3 = new SqlConnection();
-            baglanti3.ConnectionString = (@"Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True");
+            baglanti3.ConnectionString = (@"Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True");
             baglanti3.Open();
             string kayit2 = "SELECT toplamTutar from Irsaliyes where irsaliyeTedarikciID=@irsaliyeTedarikciID";
             SqlCommand komut3 = new SqlCommand(kayit2,baglanti3);
@@ -335,9 +318,35 @@ namespace MIS
             {
                 total = total + (Convert.ToInt32(dre["toplamTutar"].ToString()));
                 
+                
                 txtTedarikciTotalBorc.Text = Convert.ToString(total);
             }
             baglanti3.Close();
+        }
+        private void btnTedarikciOdemeYap_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(txtTedarikciBorcGiris.Text) == 0 || txtTedarikciBorcGiris.Text == null)
+            {
+                MessageBox.Show("Ödenecek Tutar Giriniz");
+            }
+            else
+            {
+                TedarikciBorc tedborc = new TedarikciBorc();
+                Context cntt = new Context();
+                tedborc.tedarikciBorcIrsaliyeTutar = Convert.ToInt32(txtTedarikciBorcGiris.Text);
+                tedborc.tedarikciBorcdurum = false;
+                tedborc.tedarikciBorcTedarikciID = idTed.Text;
+                cntt.TedarikciBorcs.Add(tedborc);
+                cntt.SaveChanges();
+                MessageBox.Show("Ödeme Başarılı");
+            }
+            txtTedarikciTotalBorc.Text = Convert.ToString(Convert.ToInt32(txtTedarikciTotalBorc.Text) - (Convert.ToInt32(txtTedarikciBorcGiris.Text)));
+
+
+
+
+
+
         }
 
         private void txtTedarikciTotalBorc_TextChanged(object sender, EventArgs e)
@@ -388,11 +397,27 @@ namespace MIS
 
 
             }
+            Tedarikci tdrk = new Tedarikci();
+            Context cnt = new Context();
+            tdrk.tedarikciID = Convert.ToInt32(idTed.Text);
+            tdrk.tedarikciKategori = "toptancı";
+            tdrk.tedarikciSirketIsim = "Sanyon Tedarik AŞ";
+            cnt.Tedarikcis.Add(tdrk);
+            cnt.SaveChanges();
+                 
+
         }
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
             guncelleme();
+        }
+
+        
+
+        private void txtTedarikciBorcGiris_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

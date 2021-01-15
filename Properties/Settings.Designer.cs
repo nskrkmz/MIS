@@ -26,7 +26,7 @@ namespace MIS.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True")]
         public string MIS_DBConnectionString {
             get {
                 return ((string)(this["MIS_DBConnectionString"]));

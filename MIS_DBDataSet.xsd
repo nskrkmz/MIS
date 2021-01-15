@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MIS_DBDataSet" targetNamespace="http://tempuri.org/MIS_DBDataSet.xsd" xmlns:mstns="http://tempuri.org/MIS_DBDataSet.xsd" xmlns="http://tempuri.org/MIS_DBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MIS_DBConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MIS_DBConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.MIS.Properties.Settings.GlobalReference.Default.MIS_DBConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UrunsTableAdapter" GeneratorDataComponentClassName="UrunsTableAdapter" Name="Uruns" UserDataComponentName="UrunsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MIS_DBConnectionString1 (Settings)" DbObjectName="MIS_DB.dbo.Uruns" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT urunAdi, urunSatisFiyat, urunGr FROM dbo.Uruns</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="urunAdi" DataSetColumn="urunAdi" />
+              <Mapping SourceColumn="urunSatisFiyat" DataSetColumn="urunSatisFiyat" />
+              <Mapping SourceColumn="urunGr" DataSetColumn="urunGr" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MIS_DBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MIS_DBDataSet" msprop:Generator_UserDSName="MIS_DBDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Uruns" msprop:Generator_TableClassName="UrunsDataTable" msprop:Generator_TableVarName="tableUruns" msprop:Generator_TablePropName="Uruns" msprop:Generator_RowDeletingName="UrunsRowDeleting" msprop:Generator_RowChangingName="UrunsRowChanging" msprop:Generator_RowEvHandlerName="UrunsRowChangeEventHandler" msprop:Generator_RowDeletedName="UrunsRowDeleted" msprop:Generator_UserTableName="Uruns" msprop:Generator_RowChangedName="UrunsRowChanged" msprop:Generator_RowEvArgName="UrunsRowChangeEvent" msprop:Generator_RowClassName="UrunsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="urunAdi" msprop:Generator_ColumnVarNameInTable="columnurunAdi" msprop:Generator_ColumnPropNameInRow="urunAdi" msprop:Generator_ColumnPropNameInTable="urunAdiColumn" msprop:Generator_UserColumnName="urunAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="urunSatisFiyat" msprop:Generator_ColumnVarNameInTable="columnurunSatisFiyat" msprop:Generator_ColumnPropNameInRow="urunSatisFiyat" msprop:Generator_ColumnPropNameInTable="urunSatisFiyatColumn" msprop:Generator_UserColumnName="urunSatisFiyat" type="xs:float" />
+              <xs:element name="urunGr" msprop:Generator_ColumnVarNameInTable="columnurunGr" msprop:Generator_ColumnPropNameInRow="urunGr" msprop:Generator_ColumnPropNameInTable="urunGrColumn" msprop:Generator_UserColumnName="urunGr" type="xs:float" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

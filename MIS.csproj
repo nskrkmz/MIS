@@ -95,18 +95,6 @@
     <Compile Include="FormGiriş_KayıtEkrani.Designer.cs">
       <DependentUpon>FormGiriş_KayıtEkrani.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormKar-Zarar%28Tarih%29.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormKar-Zarar%28Tarih%29.Designer.cs">
-      <DependentUpon>FormKar-Zarar%28Tarih%29.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormMusteriBazliRapor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMusteriBazliRapor.Designer.cs">
-      <DependentUpon>FormMusteriBazliRapor.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormPersonelKayitEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,53 +113,17 @@
     <Compile Include="FormSatisEkrani.Designer.cs">
       <DependentUpon>FormSatisEkrani.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSatisEkraniDogrulamaPenceresi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSatisEkraniDogrulamaPenceresi.Designer.cs">
-      <DependentUpon>FormSatisEkraniDogrulamaPenceresi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormSatisRaporu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSatisRaporu.Designer.cs">
-      <DependentUpon>FormSatisRaporu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormSatisTrendi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSatisTrendi.Designer.cs">
-      <DependentUpon>FormSatisTrendi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormStokGirisDogrulamaPenceresi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormStokGirisDogrulamaPenceresi.Designer.cs">
-      <DependentUpon>FormStokGirisDogrulamaPenceresi.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormStokGirisEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormStokGirisEkrani.Designer.cs">
       <DependentUpon>FormStokGirisEkrani.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormTotalBorcRaporu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormTotalBorcRaporu.Designer.cs">
-      <DependentUpon>FormTotalBorcRaporu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormUrunBazliRaporGraf.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormUrunBazliRaporGraf.Designer.cs">
-      <DependentUpon>FormUrunBazliRaporGraf.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="MIS_DB.designer.cs">
+    <Compile Include="MIS_DBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MIS_DB.dbml</DependentUpon>
+      <DependentUpon>MIS_DBDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -187,12 +139,6 @@
     <EmbeddedResource Include="FormGiriş_KayıtEkrani.resx">
       <DependentUpon>FormGiriş_KayıtEkrani.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormKar-Zarar%28Tarih%29.resx">
-      <DependentUpon>FormKar-Zarar%28Tarih%29.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMusteriBazliRapor.resx">
-      <DependentUpon>FormMusteriBazliRapor.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormPersonelKayitEkrani.resx">
       <DependentUpon>FormPersonelKayitEkrani.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,26 +148,8 @@
     <EmbeddedResource Include="FormSatisEkrani.resx">
       <DependentUpon>FormSatisEkrani.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSatisEkraniDogrulamaPenceresi.resx">
-      <DependentUpon>FormSatisEkraniDogrulamaPenceresi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSatisRaporu.resx">
-      <DependentUpon>FormSatisRaporu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSatisTrendi.resx">
-      <DependentUpon>FormSatisTrendi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormStokGirisDogrulamaPenceresi.resx">
-      <DependentUpon>FormStokGirisDogrulamaPenceresi.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormStokGirisEkrani.resx">
       <DependentUpon>FormStokGirisEkrani.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormTotalBorcRaporu.resx">
-      <DependentUpon>FormTotalBorcRaporu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormUrunBazliRaporGraf.resx">
-      <DependentUpon>FormUrunBazliRaporGraf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -233,13 +161,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="MIS_DB.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>MIS_DB.designer.cs</LastGenOutput>
+    <None Include="MIS_DBDataSet.xsc">
+      <DependentUpon>MIS_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MIS_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MIS_DBDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="MIS_DB.dbml.layout">
-      <DependentUpon>MIS_DB.dbml</DependentUpon>
+    <None Include="MIS_DBDataSet.xss">
+      <DependentUpon>MIS_DBDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

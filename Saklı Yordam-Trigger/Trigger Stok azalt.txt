@@ -1,0 +1,10 @@
+create trigger MiktarDusIrsaliye on dbo.Islems
+for insert
+as
+begin
+declare @islemUrunID int
+declare @miktar int
+Select @islemUrunID = islemUrunID from inserted
+
+Update dbo.Irsaliyes set miktar = miktar-1 where irsaliyeUrunID = @islemUrunID
+end

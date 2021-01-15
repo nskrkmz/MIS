@@ -48,7 +48,7 @@ namespace MIS
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(118, 137);
+            this.label1.Location = new System.Drawing.Point(100, 118);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(243, 29);
             this.label1.TabIndex = 11;
@@ -61,7 +61,7 @@ namespace MIS
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(118, 224);
+            this.label3.Location = new System.Drawing.Point(100, 205);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(209, 29);
             this.label3.TabIndex = 12;
@@ -74,7 +74,7 @@ namespace MIS
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(118, 398);
+            this.label4.Location = new System.Drawing.Point(100, 379);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(194, 29);
             this.label4.TabIndex = 13;
@@ -86,10 +86,10 @@ namespace MIS
             this.txtAdSoyad.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtAdSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtAdSoyad.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtAdSoyad.Location = new System.Drawing.Point(152, 168);
+            this.txtAdSoyad.Location = new System.Drawing.Point(115, 149);
             this.txtAdSoyad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAdSoyad.Name = "txtAdSoyad";
-            this.txtAdSoyad.Size = new System.Drawing.Size(316, 37);
+            this.txtAdSoyad.Size = new System.Drawing.Size(269, 37);
             this.txtAdSoyad.TabIndex = 14;
             this.txtAdSoyad.TextChanged += new System.EventHandler(this.txtAdSoyad_TextChanged);
             // 
@@ -97,10 +97,10 @@ namespace MIS
             // 
             this.txtGorev.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtGorev.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtGorev.Location = new System.Drawing.Point(152, 255);
+            this.txtGorev.Location = new System.Drawing.Point(115, 236);
             this.txtGorev.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGorev.Name = "txtGorev";
-            this.txtGorev.Size = new System.Drawing.Size(316, 37);
+            this.txtGorev.Size = new System.Drawing.Size(269, 37);
             this.txtGorev.TabIndex = 15;
             this.txtGorev.TextChanged += new System.EventHandler(this.txtGorev_TextChanged);
             // 
@@ -108,10 +108,10 @@ namespace MIS
             // 
             this.txtMaas.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtMaas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtMaas.Location = new System.Drawing.Point(152, 341);
+            this.txtMaas.Location = new System.Drawing.Point(115, 322);
             this.txtMaas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaas.Name = "txtMaas";
-            this.txtMaas.Size = new System.Drawing.Size(316, 37);
+            this.txtMaas.Size = new System.Drawing.Size(269, 37);
             this.txtMaas.TabIndex = 16;
             this.txtMaas.TextChanged += new System.EventHandler(this.txtMaas_TextChanged);
             // 
@@ -119,7 +119,7 @@ namespace MIS
             // 
             this.btnKaydet.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKaydet.Location = new System.Drawing.Point(152, 558);
+            this.btnKaydet.Location = new System.Drawing.Point(78, 554);
             this.btnKaydet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(159, 58);
@@ -134,7 +134,7 @@ namespace MIS
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(118, 310);
+            this.label5.Location = new System.Drawing.Point(100, 291);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(201, 29);
             this.label5.TabIndex = 18;
@@ -145,10 +145,10 @@ namespace MIS
             // 
             this.txtSifre.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSifre.Location = new System.Drawing.Point(152, 429);
+            this.txtSifre.Location = new System.Drawing.Point(115, 410);
             this.txtSifre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSifre.Name = "txtSifre";
-            this.txtSifre.Size = new System.Drawing.Size(316, 37);
+            this.txtSifre.Size = new System.Drawing.Size(269, 37);
             this.txtSifre.TabIndex = 19;
             this.txtSifre.TextChanged += new System.EventHandler(this.txtSifre_TextChanged);
             // 
@@ -156,7 +156,7 @@ namespace MIS
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(329, 558);
+            this.button1.Location = new System.Drawing.Point(255, 554);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 58);

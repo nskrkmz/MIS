@@ -1,5 +1,5 @@
 Create proc MusterisVeMusteriBorcs
 as
 begin
-select u.musteriAdSoyad,u.musteriAlisverisTarihi,kat.musteriGuncelBorc,kat.odenenMiktar,kat.musteriBorcDurum from Musteris u inner join MusteriBorcs  kat on u.musteriFisNo = kat.musteriBorcFisNo 
+select m.musteriAdSoyad,m.musteriAlisverisTarihi,mb.musteriGuncelBorc,mb.odenenMiktar,mb.musteriBorcDurum from Musteris m inner join MusteriBorcs  mb on m.musteriFisNo = mb.musteriBorcFisNo 
 end
