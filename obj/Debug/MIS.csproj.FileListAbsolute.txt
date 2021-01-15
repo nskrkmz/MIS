@@ -154,10 +154,7 @@ D:\MIS\obj\Debug\MIS.FormGirisEkrani.resources
 D:\MIS\obj\Debug\MIS.FormPersonelKayitEkrani.resources
 D:\MIS\obj\Debug\MIS.FormRaporlamaEkranı.resources
 D:\MIS\obj\Debug\MIS.FormSatisEkrani.resources
-D:\MIS\obj\Debug\MIS.FormSatisEkraniDogrulamaPenceresi.resources
-D:\MIS\obj\Debug\MIS.FormStokGirisDogrulamaPenceresi.resources
 D:\MIS\obj\Debug\MIS.FormStokGirisEkrani.resources
-D:\MIS\obj\Debug\MIS.FormUrunBazliRaporGraf.resources
 D:\MIS\obj\Debug\MIS.Properties.Resources.resources
 D:\MIS\obj\Debug\MIS.csproj.GenerateResource.cache
 D:\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
@@ -165,11 +162,6 @@ D:\MIS\obj\Debug\MIS.csproj.CopyComplete
 D:\MIS\obj\Debug\MIS.exe
 D:\MIS\obj\Debug\MIS.pdb
 D:\MIS\obj\Debug\MIS.FormGiriş_KayıtEkrani.resources
-D:\MIS\obj\Debug\MIS.FormKar_Zarar_Tarih_.resources
-D:\MIS\obj\Debug\MIS.FormMusteriBazliRapor.resources
-D:\MIS\obj\Debug\MIS.FormSatisRaporu.resources
-D:\MIS\obj\Debug\MIS.FormSatisTrendi.resources
-D:\MIS\obj\Debug\MIS.FormTotalBorcRaporu.resources
 C:\MIS\obj\Debug\MIS.FormGiriş_KayıtEkrani.resources
 C:\MIS\obj\Debug\MIS.FormKar_Zarar_Tarih_.resources
 C:\MIS\obj\Debug\MIS.FormMusteriBazliRapor.resources

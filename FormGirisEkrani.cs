@@ -44,7 +44,10 @@ namespace MIS
             linkGithub.ActiveLinkColor = Color.Brown;
             //Linklerin altını fare üzerine geldiğinde çiz
             linkGithub.LinkBehavior = LinkBehavior.HoverUnderline;
-            
+
+            //Context cntxt =new Context();//Context sınıfından nesne yaratıldı
+            //cntxt.Database.Create();//Veritabanı oluşturuldu
+
 
         }
 
@@ -55,14 +58,17 @@ namespace MIS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string kullaniciID = KullaniciNoGiris.Text;
+            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True");
+            
+                string kullaniciAdSoyad = (KullaniciNoGiris.Text);
             string sifre = sifreGiris.Text;
-            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True");
+            
             SqlCommand komut = new SqlCommand();
             baglanti.Open();
             komut.Connection = baglanti;
-            komut.CommandText = "SELECT * FROM Calisans where calisanID='" + KullaniciNoGiris.Text + "' AND calisanSifre='" + sifreGiris.Text + "'";
+            komut.CommandText = "SELECT * FROM Calisans where calisanAdSoyad='" + KullaniciNoGiris.Text + "' AND calisanSifre='" + sifreGiris.Text + "'";
             dr = komut.ExecuteReader();
+
             if (dr.Read())
             {
                 FormAnaEkran ae = new FormAnaEkran();
@@ -75,6 +81,11 @@ namespace MIS
                 MessageBox.Show("Kullanıcı no veya şifrenizi kontrol ediniz!!");
             }
             baglanti.Close();
+
+
+
+
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

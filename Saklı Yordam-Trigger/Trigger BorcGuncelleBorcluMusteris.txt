@@ -1,0 +1,13 @@
+create trigger BorcDüzenlemeMusteriBorcs on dbo.BorcluMusteris
+for insert
+as
+begin
+declare @BorcluMusteriMusteriID int
+declare @musteriGuncelBorc int
+declare @odenen int
+Select @BorcluMusteriMusteriID = borcluMusteriMusteriID from inserted
+Select @odenen = odenenMiktar from inserted
+
+Update dbo.MusteriBorcs set odenenMiktar=@odenen where musteriBorcMusteriID = @BorcluMusteriMusteriID
+Update dbo.MusteriBorcs set musteriGuncelBorc = musteriGuncelBorc-@odenen where musteriBorcMusteriID = @BorcluMusteriMusteriID
+end

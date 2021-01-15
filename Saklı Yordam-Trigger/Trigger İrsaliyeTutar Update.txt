@@ -1,0 +1,12 @@
+create trigger TedarikciBorcUpdate on dbo.TedarikciBorcs
+for insert
+as
+begin
+declare @tedarikciBorcirsaliyeNo int
+declare @guncelBorc int
+declare @odenen int
+Select @tedarikciBorcirsaliyeNo= tedarikciBorcirsaliyeNo from inserted
+Select @odenen = tedarikciBorcIrsaliyeTutar from inserted
+
+Update dbo.Irsaliyes set toplamTutar=toplamTutar-@odenen where irsaliyeNo=@tedarikciBorcirsaliyeNo
+end

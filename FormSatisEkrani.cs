@@ -16,20 +16,31 @@ namespace MIS
     //merhabalar!
     public partial class FormSatisEkrani : Form
     {
+        
+        public static int random()
+        {
+            int i;
+            Random rnd = new Random();
+            i = rnd.Next(1000);
+            return i;
+        }
+        int tasi = random();
         public FormSatisEkrani()
         {
             InitializeComponent();
             panel1.Visible = false;
             panel3.Visible = false;
             panel2.Visible = false;
+            
         }
 
-        static string conString = "Data Source=DESKTOP-RQU3Q37;Initial Catalog=MIS_DB;Integrated Security=True";
+        static string conString = "Data Source=DESKTOP-KGV1HQ5;Initial Catalog=MIS_DB;Integrated Security=True";
         SqlConnection baglanti = new SqlConnection(conString);
 
         private void FormSatisEkrani_Load(object sender, EventArgs e)
         {
             yukle();
+            
         }
         public void yukle()
         {
@@ -166,6 +177,7 @@ namespace MIS
             mus.musteriAdSoyad = txtMusAdSoy.Text;
             mus.musteriTel = Convert.ToInt32(txtMusteriTelNo.Text);
             mus.musteriAlisverisTarihi = txtIslemTarih.Text;
+            mus.musteriFisNo = tasi;
 
 
 
@@ -272,11 +284,12 @@ namespace MIS
                 
                 cntxt.Islems.Add(islm);
                 cntxt.SaveChanges();
-                MessageBox.Show("Ödeme Gerçekleştirildi");
+                
 
 
                 
             }
+            MessageBox.Show("Ödeme Gerçekleştirildi");
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -342,10 +355,11 @@ namespace MIS
                     fis.fisMusteriID = Convert.ToInt32(VeresiyeListesiCb.SelectedItem); // peşin ödeme default değeri
                     
                     mstBrc.musteriBorcDurum = false;
-                    mstBrc.musteriBorcFisNo = count + 1;
+                    mstBrc.musteriBorcFisNo = tasi;
                     mstBrc.musteriBorcMusteriID = Convert.ToInt32(VeresiyeListesiCb.SelectedItem);
                     mstBrc.musteriGuncelBorc = Convert.ToInt32(textBox2.Text);
                     mstBrc.odenenMiktar = 0;
+
 
                     cntxt.Fiss.Add(fis);
                     cntxt.MusteriBorcs.Add(mstBrc);
@@ -405,6 +419,11 @@ namespace MIS
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
